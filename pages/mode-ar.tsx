@@ -4,6 +4,7 @@ import { DefaultLayout } from 'components/layouts'
 import { NextPageWithLayout } from 'types'
 import dynamic from 'next/dynamic'
 
+{/* @ts-expect-error Server Component */}
 const ModeArWrapper = dynamic(() => import('features/mode-ar').then((model) => model.ModeArWrapper), {ssr: false})
 
 const ModeAr: NextPageWithLayout = () => {
@@ -12,7 +13,7 @@ const ModeAr: NextPageWithLayout = () => {
       <Head>
         <title>Mode AR</title>
       </Head>
-
+      
       <ModeArWrapper />
     </>
   )
