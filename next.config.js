@@ -2,6 +2,7 @@
 
 const nextConfig = {
   reactStrictMode: true,
+  reactDevOverlay: false,
   eslint: {
     dirs: [
       'apis',
@@ -22,6 +23,12 @@ const nextConfig = {
         filename: 'static/[hash][ext]',
       },
     })
+
+    config.devServer = {
+      client: {
+          overlay: false
+      }
+    }
 
     return config
   },

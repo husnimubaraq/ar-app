@@ -1,54 +1,32 @@
+// @ts-nocheck
+'use client'
 
+import { useEffect, useRef } from 'react';
+import Link from 'next/link';
+import { HomeIcon, SoundIcon } from 'components/icon';
 
-import Link from "next/link"
-import { useFrame, useLoader } from '@react-three/fiber';
-import {
-  ZapparCamera, ImageTracker, ZapparCanvas, Loader, BrowserCompatibility,
-} from '@zappar/zappar-react-three-fiber';
-import { Text } from '@react-three/drei';
+import 'aframe';
+import 'mind-ar/dist/mindar-image-aframe.prod.js';
+
+import { MindARThree } from 'mind-ar/dist/mindar-image-three.prod.js';
 import * as THREE from 'three';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
-
-import { HomeIcon, SoundIcon } from "components/icon"
-import { Suspense } from "react";
-import React from "react";
-
-import gld from 'public/waving.glb'
-import targetImage from 'public/example-tracking-image.zpt'
-
-let action: THREE.AnimationAction;
-
-const Model = () => {
-
-  const clock = new THREE.Clock();
-  const gltf = useLoader(GLTFLoader, gld) as any ;
-  const mixer = new THREE.AnimationMixer(gltf.scene);
-
-  action = mixer.clipAction(gltf.animations[0]);
-  gltf.scene.rotateX(Math.PI / 2);
-
-  useFrame(() => mixer.update(clock.getDelta()));
-
-  return <primitive object={gltf.scene} />;
-};
-
-function Nametitle() {
-  return (
-    <group>
-      <mesh>
-        <Text color="white" position={[-0.958, 0.1, 0.1]} fontSize={0.13}>
-          Francesca Ellis
-        </Text>
-        <Text color="white" position={[-0.85, -0.033, 0.1]} fontSize={0.1}>
-          Junior Support Engineer
-        </Text>
-      </mesh>
-    </group>
-  );
-}
-
 
 export const ModeArWrapper = () => {
+
+  const sceneRef = useRef<any>(null);
+
+  useEffect(() => {
+    const sceneEl = sceneRef?.current ?? null;
+    if(sceneEl){
+      const arSystem = sceneEl?.systems["mindar-image-system"] ?? null;
+      sceneEl?.addEventListener('renderstart', () => {
+        if(arSystem){
+          arSystem?.start(); // start AR 
+        }
+      });
+    }
+  }, []);
+
 
   return (
     <div>
@@ -62,18 +40,22 @@ export const ModeArWrapper = () => {
         <SoundIcon />
       </div>
 
-      <div className="h-[80vh] mt-5">
-        <BrowserCompatibility />
-        <ZapparCanvas>
-          <ZapparCamera />
-          <ImageTracker targetImage={targetImage}>
-              <Nametitle/>
-              <Model />
-          </ImageTracker>
+      <div className="container">
+        <a-scene ref={sceneRef}  mindar-image="imageTargetSrc: https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/band.mind;uiScanning: no;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+          <a-assets>
+            <a-asset-item id="bearModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/bear/scene.gltf"></a-asset-item>
+            <a-asset-item id="raccoonModel" src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.2/examples/image-tracking/assets/band-example/raccoon/scene.gltf"></a-asset-item>
+          </a-assets>
 
-          <directionalLight position={[2.5, 8, 5]} intensity={1.5} />
-          <Loader />
-        </ZapparCanvas>
+          <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
+
+          <a-entity mindar-image-target="targetIndex: 0">
+            <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#raccoonModel" animation-mixer></a-gltf-model>
+          </a-entity>
+          <a-entity mindar-image-target="targetIndex: 1">
+            <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale="0.05 0.05 0.05" src="#bearModel" animation-mixer></a-gltf-model>
+          </a-entity>
+        </a-scene>
       </div>
     </div>
   )
