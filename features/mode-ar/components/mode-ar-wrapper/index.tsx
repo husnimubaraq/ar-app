@@ -8,9 +8,6 @@ import { HomeIcon, SoundIcon } from 'components/icon';
 import 'aframe';
 import 'mind-ar/dist/mindar-image-aframe.prod.js';
 
-import { MindARThree } from 'mind-ar/dist/mindar-image-three.prod.js';
-import * as THREE from 'three';
-
 export const ModeArWrapper = () => {
 
   const sceneRef = useRef<any>(null);
