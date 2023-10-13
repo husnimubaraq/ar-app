@@ -9,7 +9,6 @@ import { useState } from 'react'
 import { AppPropsWithLayout } from 'types'
 
 import 'styles/global.css'
-import ErrorBoundary from './_error'
 
 const App = ({ Component, pageProps }: AppPropsWithLayout) => {
   /**
@@ -27,9 +26,7 @@ const App = ({ Component, pageProps }: AppPropsWithLayout) => {
     <QueryClientProvider client={queryClient}>
       <Hydrate state={pageProps.dehydratedState}>
         {getLayout(
-          <ErrorBoundary>
-            <Component {...pageProps} />
-          </ErrorBoundary>
+          <Component {...pageProps} />
         )}
       </Hydrate>
       <ReactQueryDevtools />
