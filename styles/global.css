@@ -4,13 +4,13 @@
 
 @import './button.css';
 
-iframe {
-    display: none;
+.control-buttons {
+    position: relative;
+    z-index: 1000;
 }
 
-
 video {
-    width: 100%;
+    width: 100vh;
     object-fit: cover;
     object-position: center;
     /* transform: scale(-1, 2); */
@@ -19,7 +19,7 @@ video {
 .container {
     margin: 20px auto;
     position: relative;
-    height: calc(100vh - 200px);
-    width: 100%;
+    height: calc(100vh - 150px);
+    width: 100vw;
     overflow: hidden;
 }
