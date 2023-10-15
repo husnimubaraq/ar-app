@@ -58,7 +58,7 @@ export const ModeArWrapper = () => {
       <div className="container">
         <a-scene ref={sceneRef} mindar-image="imageTargetSrc: ./targets.mind;uiScanning: no;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
           <a-assets>
-            {data.reverse().map((item) => (
+            {data.map((item) => (
               <a-asset-item 
                 id={`${item.name}-model`} src={item.url}
               ></a-asset-item>
