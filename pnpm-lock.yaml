@@ -54,6 +54,7 @@ specifiers:
   prettier-plugin-tailwindcss: ^0.1.13
   react: 18.2.0
   react-dom: 18.2.0
+  react-speech-recognition: ^3.10.0
   react-spring: ^9.7.3
   tailwind-merge: ^1.14.0
   tailwindcss: ^3.3.3
@@ -85,6 +86,7 @@ dependencies:
   next-transpile-modules: 10.0.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
+  react-speech-recognition: 3.10.0_react@18.2.0
   react-spring: 9.7.3_rpiehl7gamkwtzg3xuzkpw4zi4
   tailwind-merge: 1.14.0
   three: 0.153.0
@@ -6598,6 +6600,14 @@ packages:
       loose-envify: 1.4.0
       react: 18.2.0
       scheduler: 0.21.0
+    dev: false
+
+  /react-speech-recognition/3.10.0_react@18.2.0:
+    resolution: {integrity: sha512-EVSr4Ik8l9urwdPiK2r0+ADrLyDDrjB0qBRdUWO+w2MfwEBrj6NuRmy1GD3x7BU/V6/hab0pl8Lupen0zwlJyw==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /react-spring/9.7.3_rpiehl7gamkwtzg3xuzkpw4zi4:
