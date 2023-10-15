@@ -7,7 +7,7 @@ import { Footer } from "components/layouts"
 
 export const HomeWrapper = () => {
   return (
-    <div className="">
+    <div className="h-[100vh]">
       <div className="flex flex-col items-end text-neutral-500">
         <XIcon />
       </div>
@@ -31,7 +31,7 @@ export const HomeWrapper = () => {
         </Link>
         
         <Link href='/mode-game' className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">
-            BELAJAR
+            BERMAIN
         </Link>
 
         <Link href="#" className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">

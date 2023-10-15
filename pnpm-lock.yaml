@@ -29,6 +29,7 @@ specifiers:
   autoprefixer: ^10.4.16
   axios: ^1.5.0
   dayjs: ^1.11.10
+  embla-carousel-react: 8.0.0-rc14
   eslint: 8.27.0
   eslint-config-next: 13.4.4
   eslint-config-prettier: ^8.10.0
@@ -79,6 +80,7 @@ dependencies:
   aframe-react: 4.4.0
   axios: 1.5.0
   dayjs: 1.11.10
+  embla-carousel-react: 8.0.0-rc14_react@18.2.0
   glsl-random: 0.0.5
   mind-ar: 1.2.3_three@0.153.0
   mind-ar-ts: 0.5.7
@@ -3243,6 +3245,28 @@ packages:
   /electron-to-chromium/1.4.528:
     resolution: {integrity: sha512-UdREXMXzLkREF4jA8t89FQjA8WHI6ssP38PMY4/4KhXFQbtImnghh4GkCgrtiZwLKUKVD2iTVXvDVQjfomEQuA==}
     dev: true
+
+  /embla-carousel-react/8.0.0-rc14_react@18.2.0:
+    resolution: {integrity: sha512-2b9vXACEcn0qja4QyaFMfCgFbFhumV3krOCGr9+jlQiuXt5z/EyfiYYziDsm70DhTtxtg/uKEGflIqZSfWRYKg==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.1 || ^18.0.0
+    dependencies:
+      embla-carousel: 8.0.0-rc14
+      embla-carousel-reactive-utils: 8.0.0-rc14_embla-carousel@8.0.0-rc14
+      react: 18.2.0
+    dev: false
+
+  /embla-carousel-reactive-utils/8.0.0-rc14_embla-carousel@8.0.0-rc14:
+    resolution: {integrity: sha512-r153bynAo9eTBuWWggPWLYnE9xqVOYmkkeMbAuGX8pkUisJN8aTLMW9b7CYOzjURRB7z85EmYRbeBg+axQzc9g==}
+    peerDependencies:
+      embla-carousel: 8.0.0-rc14
+    dependencies:
+      embla-carousel: 8.0.0-rc14
+    dev: false
+
+  /embla-carousel/8.0.0-rc14:
+    resolution: {integrity: sha512-/NLkMFZ7xKryRVYeUjmhbfV63Vr07saPBDwAX2TPMbcaiWwfQfU5Xsc2AiCMZANtwmzsjRK6gSBa7hOy/VXu6g==}
+    dev: false
 
   /emittery/0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
