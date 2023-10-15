@@ -18,10 +18,4 @@ export const data = [
         url: "./assets/models/fox/Fox.gltf"
         // url: "https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Fox/glTF/Fox.gltf"
     },
-    {
-        name: "avocado",
-        scale: "0.01 0.01 0.01",
-        url: "./assets/models/avocado/Avocado.gltf"
-        // url: "https://github.com/KhronosGroup/glTF-Sample-Models/blob/master/2.0/Fox/glTF/Fox.gltf"
-    }
 ]
