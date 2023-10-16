@@ -1,3 +1,3 @@
 export type TProps = {
-    transparent: boolean
+    transparent?: boolean
 }
