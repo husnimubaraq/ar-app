@@ -3,11 +3,12 @@
 import { useLoader } from "@react-three/fiber";
 import { TProps } from "./type"
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { useGLTF } from "@react-three/drei";
 
 export const ModeGamePlayModel = (props: TProps) => {
     const { glb } = props
 
-    const gltf = useLoader(GLTFLoader, glb) as any;
+    const gltf = useGLTF(glb) as any
 
     return (
         <>
