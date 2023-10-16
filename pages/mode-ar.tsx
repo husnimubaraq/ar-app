@@ -20,7 +20,7 @@ const ModeAr: NextPageWithLayout = () => {
 }
 
 ModeAr.getLayout = (page) => {
-  return <DefaultLayout>{page}</DefaultLayout>
+  return <DefaultLayout transparent>{page}</DefaultLayout>
 }
 
 export default ModeAr
