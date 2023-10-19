@@ -37,47 +37,56 @@ export const dataGame: TModeGame[] = [
             {
                 image_url: "/assets/models/cardboard_box/low.jpg",
                 model: cardboardBoxGlb,
-                text: 'Kotak Kardus'
+                text: 'Kotak Kardus',
+                scale: 0.5
             },
             {
                 image_url: "/assets/models/clock/low.jpg",
                 model: clockGlb,
-                text: 'Jam Dinding'
+                text: 'Jam Dinding',
+                scale: 3
             },
             {
                 image_url: "/assets/models/book/low.jpg",
                 model: bookGlb,
-                text: 'Buku'
+                text: 'Buku',
+                scale: 0.1
             },
             {
                 image_url: "/assets/models/kite/low.jpg",
                 model: kiteGlb,
-                text: 'Layangan'
+                text: 'Layangan',
+                scale: 0.5
             },
             {
                 image_url: "/assets/models/cardboard_lowpoly/low.jpg",
                 model: cardboardLowpolyGlb,
-                text: 'Kotak Snack'
+                text: 'Kotak Snack',
+                scale: 3
             },
             {
                 image_url: "/assets/models/soccer-ball/low.jpg",
                 model: soccerBallGlb,
-                text: 'Bola'
+                text: 'Bola',
+                scale: 1
             },
             {
                 image_url: "/assets/models/whiteboard/low.jpg",
                 model: whiteboardGlb,
-                text: 'Papan Tulis'
+                text: 'Papan Tulis',
+                scale: 0.5
             },
             {
                 image_url: "/assets/models/marbles/low.jpg",
                 model: marblesGlb,
-                text: 'Kelereng'
+                text: 'Kelereng',
+                scale: 15
             },
             {
                 image_url: "/assets/models/smartphone/low.jpg",
                 model: smartphoneGlb,
-                text: 'HP'
+                text: 'HP',
+                scale: 0.5
             }
         ]
     },
@@ -86,49 +95,58 @@ export const dataGame: TModeGame[] = [
         title: 'Level 2',
         game: [
             {
-                image_url: "/assets/models/cardboard_box/low.jpg",
-                model: cardboardBoxGlb,
-                text: 'Kotak Kardus'
+                image_url: "/assets/models/bucker/low.jpg",
+                model: bucketGlb,
+                text: 'Ember',
+                scale: 0.05
             },
             {
-                image_url: "/assets/models/clock/low.jpg",
-                model: clockGlb,
-                text: 'Jam Dinding'
+                image_url: "/assets/models/wheel/low.jpg",
+                model: wheelGlb,
+                text: 'Roda',
+                scale: 0.4
             },
             {
-                image_url: "/assets/models/book/low.jpg",
-                model: bookGlb,
-                text: 'Buku'
+                image_url: "/assets/models/dice/low.jpg",
+                model: diceGlb,
+                text: 'Dadu',
+                scale: 1
             },
             {
-                image_url: "/assets/models/kite/low.jpg",
-                model: kiteGlb,
-                text: 'Layangan'
+                image_url: "/assets/models/balloons/low.jpg",
+                model: balloonsGlb,
+                text: 'Balon',
+                scale: 3
+            }, 
+            {
+                image_url: "/assets/models/can/low.jpg",
+                model: canGlb,
+                text: 'Kaleng',
+                scale: 0.1
             },
             {
-                image_url: "/assets/models/cardboard_lowpoly/low.jpg",
-                model: cardboardLowpolyGlb,
-                text: 'Kotak Snack'
+                image_url: "/assets/models/plates/low.jpg",
+                model: platesGlb,
+                text: 'Piring',
+                scale: 0.02
             },
             {
-                image_url: "/assets/models/soccer-ball/low.jpg",
-                model: soccerBallGlb,
-                text: 'Bola'
+                image_url: "/assets/models/rubric/low.jpg",
+                model: rubricGlb,
+                text: 'Rubrik',
+                scale: 15
             },
             {
-                image_url: "/assets/models/whiteboard/low.jpg",
-                model: whiteboardGlb,
-                text: 'Papan Tulis'
+                image_url: "/assets/models/eraser/low.jpg",
+                model: eraserGlb,
+                text: 'Penghapus Papan',
+                scale: 0.05//not solve
             },
             {
-                image_url: "/assets/models/marbles/low.jpg",
-                model: marblesGlb,
-                text: 'Kelereng'
-            },
-            {
-                image_url: "/assets/models/smartphone/low.jpg",
-                model: smartphoneGlb,
-                text: 'HP'
+                image_url: "/assets/models/radio/low.jpg",
+                model: radioGlb,
+                text: 'Radio',
+                scale: 0.005
             }
         ]
     },
@@ -137,49 +155,58 @@ export const dataGame: TModeGame[] = [
         title: 'Level 3',
         game: [
             {
-                image_url: "/assets/models/cardboard_box/low.jpg",
-                model: cardboardBoxGlb,
-                text: 'Kotak Kardus'
+                image_url: "/assets/models/cup/low.jpg",
+                model: cupGlb,
+                text: 'Cangkir',
+                scale: 0.5
             },
             {
-                image_url: "/assets/models/clock/low.jpg",
-                model: clockGlb,
-                text: 'Jam Dinding'
+                image_url: "/assets/models/hanger/low.jpg",
+                model: hangerGlb,
+                text: 'Hanger',
+                scale: 0.05
             },
             {
-                image_url: "/assets/models/book/low.jpg",
-                model: bookGlb,
-                text: 'Buku'
+                image_url: "/assets/models/chair/low.jpg",
+                model: chairGlb,
+                text: 'Kursi',
+                scale: 0.5
             },
             {
-                image_url: "/assets/models/kite/low.jpg",
-                model: kiteGlb,
-                text: 'Layangan'
+                image_url: "/assets/models/bell/low.jpg",
+                model: bellGlb,
+                text: 'Lonceng',
+                scale: 0.003
             },
             {
-                image_url: "/assets/models/cardboard_lowpoly/low.jpg",
-                model: cardboardLowpolyGlb,
-                text: 'Kotak Snack'
+                image_url: "/assets/models/fan/low.jpg",
+                model: fanGlb,
+                text: 'Kipas Angin',
+                scale: 0.0005
             },
             {
-                image_url: "/assets/models/soccer-ball/low.jpg",
-                model: soccerBallGlb,
-                text: 'Bola'
+                image_url: "/assets/models/bottle/low.jpg",
+                model: bottleGlb,
+                text: 'Botol Minum',
+                scale: 0.15
             },
             {
-                image_url: "/assets/models/whiteboard/low.jpg",
-                model: whiteboardGlb,
-                text: 'Papan Tulis'
+                image_url: "/assets/models/glass_bowl/low.jpg",
+                model: glassBowlGlb,
+                text: 'Mangkuk',
+                scale: 15
             },
             {
-                image_url: "/assets/models/marbles/low.jpg",
-                model: marblesGlb,
-                text: 'Kelereng'
+                image_url: "/assets/models/conical_hat/low.jpg",
+                model: conicalHatGlb,
+                text: 'Caping',
+                scale: 5
             },
             {
-                image_url: "/assets/models/smartphone/low.jpg",
-                model: smartphoneGlb,
-                text: 'HP'
+                image_url: "/assets/models/gas/low.jpg",
+                model: gasGlb,
+                text: 'Tabung Gas',
+                scale: 1
             }
         ]
     }

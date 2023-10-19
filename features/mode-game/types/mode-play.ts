@@ -5,7 +5,8 @@ export type TModeGame = {
 }
 
 export type TGame = {
-    image_url: string,
-    model: any,
+    image_url: string
+    model: any
     text: string
+    scale: number
 }
