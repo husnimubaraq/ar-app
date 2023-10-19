@@ -95,7 +95,7 @@ export const dataGame: TModeGame[] = [
         title: 'Level 2',
         game: [
             {
-                image_url: "/assets/models/bucker/low.jpg",
+                image_url: "/assets/models/bucket/low.jpg",
                 model: bucketGlb,
                 text: 'Ember',
                 scale: 0.05
@@ -140,7 +140,7 @@ export const dataGame: TModeGame[] = [
                 image_url: "/assets/models/eraser/low.jpg",
                 model: eraserGlb,
                 text: 'Penghapus Papan',
-                scale: 0.05//not solve
+                scale: 0.05
             },
             {
                 image_url: "/assets/models/radio/low.jpg",

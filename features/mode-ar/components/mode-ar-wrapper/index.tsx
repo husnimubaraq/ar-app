@@ -33,7 +33,7 @@ export const ModeArWrapper = () => {
       const target = document.querySelector(`#${item.name}-target`)
 
       target?.addEventListener('targetFound', () => {
-        setName(item.name.toUpperCase())
+        setName(item.title.toUpperCase())
       })
 
       target?.addEventListener('targetLost', () => {
@@ -76,8 +76,8 @@ export const ModeArWrapper = () => {
 
         {name && (
           <div className='fixed top-[11%] left-10 right-10'>
-            <div className='bg-white rounded-md py-2 px-5'>
-              <h4 className='text-xl font-bold text-black text-center'>{name}</h4>
+            <div className='bg-orange-500 rounded-md py-2 px-5'>
+              <h4 className='text-xl font-bold text-white text-center'>{name}</h4>
             </div>
           </div>
         )}
