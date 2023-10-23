@@ -3,7 +3,7 @@ export const data = [
     {
         name: "cardboard_box",
         title: "Kontak Kardus",
-        scale: "0.05 0.05 0.05",
+        scale: "0.5 0.5 0.5",
         url: "./assets/models/cardboard_box/scene.gltf"
     },
     {

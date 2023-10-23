@@ -6,20 +6,29 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { ModeGamePlayModel, TGame, dataGame } from "features/mode-game"
 import { Tab } from "@headlessui/react"
 import { twMerge } from "tailwind-merge"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Image from "next/image"
 import { SuccessPopup } from "components/success-popup"
 import { FailedPopup } from "components/failed-popup"
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+
 
 export const ModeGameWrapper = () => {
 
+  const {
+    listening,
+    finalTranscript,
+  } = useSpeechRecognition();
+
+
   const [isOpen, setIsOpen] = useState(false)
-  const [type, setType] = useState('')
+  const [status, setStatus] = useState('idle')
 
   const [tabIndex, setTabIndex] = useState(0)
   const [gameIndex, setGameIndex] = useState(0)
+
   const data = dataGame.find((item) => item.level === dataGame[tabIndex].level)
 
   const onNext = () => {
@@ -31,7 +40,36 @@ export const ModeGameWrapper = () => {
         setGameIndex(gameIndex + 1)
       }
     }
+    setStatus('idle')
   }
+
+  const onMic = () => {
+    if (listening) {
+      SpeechRecognition.stopListening()
+    } else {
+      SpeechRecognition.startListening()
+    }
+  }
+
+  useEffect(() => {
+    if (data && finalTranscript) {
+
+      if (finalTranscript.toLowerCase() === data.game[gameIndex].text.toLowerCase()) {
+        setStatus('success')
+
+        setTimeout(() => {
+          setStatus('')
+        }, 3000)
+      }else{
+        setStatus('failed')
+
+        setTimeout(() => {
+          setStatus('idle')
+        }, 3000)
+      }
+      
+    }
+  }, [finalTranscript])
 
   return (
     <div className="h-[100vh]">
@@ -96,23 +134,48 @@ export const ModeGameWrapper = () => {
                 blur={0.65}
               />
             </Canvas>
-            {data && data.game.length - 1 === gameIndex ? (
+            {status === 'idle' ? (
               <div
-                onClick={dataGame.length - 1 === tabIndex ? undefined : onNext}
+                onClick={onMic}
                 className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
               >
-                Selesai
+                <div className="flex items-center justify-center gap-x-2 hover:text-white">
+                  <Image
+                    src={
+                      listening ? '/assets/images/mic-on.png' : '/assets/images/mic.png'
+                    }
+                    width={20}
+                    height={20}
+                    alt={""}
+                  />
+                </div>
               </div>
             ) : (
-              <div
-                onClick={onNext}
-                className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
-              >
-                {data && data.game.length - 1 === gameIndex ? 'Selesai' : 'Lanjut'}
-              </div>
+              (data && status === '') && data.game.length - 1 === gameIndex ? (
+                <div
+                  onClick={dataGame.length - 1 === tabIndex ? undefined : onNext}
+                  className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
+                >
+                  Selesai
+                </div>
+              ) : (
+                <div
+                  onClick={onNext}
+                  className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
+                >
+                  {data && data.game.length - 1 === gameIndex ? 'Selesai' : 'Lanjut'}
+                </div>
+              )
             )}
 
-            <FailedPopup/>
+            {status === 'failed' && (
+              <FailedPopup />
+            )}
+
+            {status === 'success' && (
+              <SuccessPopup />
+            )}
+
           </div>
         </Tab.Group>
       </div>
