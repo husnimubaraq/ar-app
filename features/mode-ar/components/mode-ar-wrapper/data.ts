@@ -34,7 +34,7 @@ export const data = [
         name: "soccer-ball",
         title: "Bola",
         scale: "1 1 1",
-        url: "./assets/models/soccer-ball/Fox.gltf"
+        url: "./assets/models/soccer-ball/scene.gltf"
     },
     {
         name: "whiteboard",
@@ -91,10 +91,10 @@ export const data = [
         url: "./assets/models/plates/scene.gltf"
     },
     {
-        name: "rubirc",
+        name: "rubric",
         title: "Rubrik",
         scale: "15 15 15",
-        url: "./assets/models/rubirc/scene.gltf"
+        url: "./assets/models/rubric/scene.gltf"
     },
     {
         name: "eraser",
