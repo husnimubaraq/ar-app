@@ -34,7 +34,7 @@ export const HomeWrapper = () => {
             BERMAIN
         </Link>
 
-        <Link href="#" className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">
+        <Link href="/mode-card" className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">
             UNDUH KARTU
         </Link>
       </div>
