@@ -54,7 +54,7 @@ export const dataGame: TModeGame[] = [
             {
                 image_url: "/assets/models/kite/low.jpg",
                 model: kiteGlb,
-                text: 'Layang Layang',
+                text: 'Layang-Layang',
                 scale: 0.5
             },
             {
