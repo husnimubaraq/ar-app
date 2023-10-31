@@ -5,7 +5,6 @@ import cardboardLowpolyGlb from 'public/assets/models/cardboard_lowpoly/scene.gl
 import clockGlb from 'public/assets/models/clock/scene.glb'
 import bookGlb from 'public/assets/models/book/scene.glb'
 import kiteGlb from 'public/assets/models/kite/scene.glb'
-import sweetsGlb from 'public/assets/models/sweets/scene.glb'
 import soccerBallGlb from 'public/assets/models/soccer-ball/scene.glb'
 import whiteboardGlb from 'public/assets/models/whiteboard/scene.glb'
 import marblesGlb from 'public/assets/models/marbles/scene.glb'
@@ -43,7 +42,7 @@ export const dataGame: TModeGame[] = [
             {
                 image_url: "/assets/models/clock/low.jpg",
                 model: clockGlb,
-                text: 'Jam Dinding',
+                text: 'Jam',
                 scale: 3
             },
             {
@@ -55,13 +54,13 @@ export const dataGame: TModeGame[] = [
             {
                 image_url: "/assets/models/kite/low.jpg",
                 model: kiteGlb,
-                text: 'Layangan',
+                text: 'Layang Layang',
                 scale: 0.5
             },
             {
                 image_url: "/assets/models/cardboard_lowpoly/low.jpg",
                 model: cardboardLowpolyGlb,
-                text: 'Kotak Snack',
+                text: 'Kardus Makan',
                 scale: 3
             },
             {
@@ -85,7 +84,7 @@ export const dataGame: TModeGame[] = [
             {
                 image_url: "/assets/models/smartphone/low.jpg",
                 model: smartphoneGlb,
-                text: 'HP',
+                text: 'Smartphone',
                 scale: 0.5
             }
         ]

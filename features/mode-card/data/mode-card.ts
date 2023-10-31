@@ -22,7 +22,7 @@ export const dataCard: TModeCard[] = [
         color: '#7db6e1'
     },
     {
-        title: 'kardu makan',
+        title: 'kardus makan',
         image_url: '/assets/models/cardboard_lowpoly/ori.png',
         color: '#eaaa3e'
     },
