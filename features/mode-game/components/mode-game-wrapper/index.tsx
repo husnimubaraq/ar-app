@@ -54,6 +54,9 @@ export const ModeGameWrapper = () => {
   useEffect(() => {
     if (data && finalTranscript) {
 
+      console.log('voice: ', finalTranscript.toLowerCase())
+      console.log('data: ', data.game[gameIndex].text.toLowerCase())
+
       if (finalTranscript.toLowerCase() === data.game[gameIndex].text.toLowerCase()) {
         setStatus('success')
 
