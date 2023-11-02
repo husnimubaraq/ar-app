@@ -13,9 +13,11 @@ import Image from "next/image"
 import { SuccessPopup } from "components/success-popup"
 import { FailedPopup } from "components/failed-popup"
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-
+import { useCustomSound } from "hooks"
 
 export const ModeGameWrapper = () => {
+
+  useCustomSound()
 
   const {
     listening,
@@ -63,14 +65,14 @@ export const ModeGameWrapper = () => {
         setTimeout(() => {
           setStatus('')
         }, 3000)
-      }else{
+      } else {
         setStatus('failed')
 
         setTimeout(() => {
           setStatus('idle')
         }, 3000)
       }
-      
+
     }
   }, [finalTranscript])
 

@@ -4,6 +4,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { HomeIcon, SoundIcon } from 'components/icon';
+import { useCustomSound } from 'hooks'
 
 import { data } from './data'
 
@@ -15,6 +16,8 @@ export const ModeArWrapper = () => {
   const sceneRef = useRef<any>(null)
   
   const [name, setName] = useState('')
+
+  useCustomSound()
 
   useEffect(() => {
     const sceneEl = sceneRef?.current ?? null
