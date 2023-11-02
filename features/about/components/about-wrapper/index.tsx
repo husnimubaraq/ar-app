@@ -3,8 +3,12 @@
 
 import { XIcon } from "components/icon"
 import { Footer } from "components/layouts"
+import { useCustomSound } from "hooks"
 
 export const AboutWrapper = () => {
+    
+    useCustomSound()
+
     return (
         <div className="">
             <div className="relative border-2 border-neutral-400 h-[70vh] mt-10">

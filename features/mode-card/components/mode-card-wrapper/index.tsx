@@ -4,8 +4,11 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import Link from "next/link"
 import { twMerge } from "tailwind-merge"
+import { useCustomSound } from 'hooks'
 
 export const ModeCardWrapper = () => {
+
+    useCustomSound()
 
     return (
         <div className="">

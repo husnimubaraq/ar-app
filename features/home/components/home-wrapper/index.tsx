@@ -4,8 +4,12 @@ import Link from "next/link"
 
 import { XIcon } from "components/icon"
 import { Footer } from "components/layouts"
+import { useCustomSound } from "hooks"
 
 export const HomeWrapper = () => {
+
+  useCustomSound()
+    
   return (
     <div className="h-[100vh]">
       <div className="flex flex-col items-end text-neutral-500">
