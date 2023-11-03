@@ -31,11 +31,11 @@ export const GuideWrapper = () => {
                     </div>
                 </div>
 
-                <div 
-                    onClick={() => push('/')}
-                    className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center cursor-pointer"
-                >
-                    <div className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
+                <div className="absolute -bottom-4 left-0 right-0 flex justify-center">
+                    <div 
+                        onClick={() => push('/')}
+                        className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center cursor-pointer"
+                    >
                         <XIcon width={30} height={30} />
                     </div>
                 </div>
