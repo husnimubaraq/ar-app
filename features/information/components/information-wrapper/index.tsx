@@ -4,8 +4,10 @@
 import { XIcon } from "components/icon"
 import { Footer } from "components/layouts"
 import { useCustomSound } from "hooks"
+import { useRouter } from "next/router"
 
 export const InformationWrapper = () => {
+    const { push } = useRouter()
     
     useCustomSound()
 
@@ -23,7 +25,10 @@ export const InformationWrapper = () => {
                     <p className="text-center mt-8">Saat menggunakan aplikasi ini harap waspada terhadap lingkungan sekitar dan bahaya fisik Anda. Disarankan agar anak kecil mendapat pengawasan orang dewasa saat menggunakan Augmented Reality.</p>
                 </div>
 
-                <div className="absolute -bottom-4 left-0 right-0 flex justify-center">
+                <div 
+                    onClick={() => push('/')}
+                    className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center cursor-pointer"
+                >
                     <div className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
                         <XIcon width={30} height={30} />
                     </div>
