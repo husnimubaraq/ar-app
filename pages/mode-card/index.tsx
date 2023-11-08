@@ -11,7 +11,17 @@ const ModeCard: NextPageWithLayout = () => {
         <title>Unduh Kartu</title>
       </Head>
 
-      <ModeCardWrapper />
+      <div
+        className="px-5 py-5"
+        style={{
+          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <ModeCardWrapper />
+      </div>
+
+      
     </>
   )
 }

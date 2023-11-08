@@ -13,11 +13,9 @@ import Image from "next/image"
 import { SuccessPopup } from "components/success-popup"
 import { FailedPopup } from "components/failed-popup"
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
-import { useCustomSound } from "hooks"
+import { useGetVoiceModel } from "features/mode-ar"
 
 export const ModeGameWrapper = () => {
-
-  useCustomSound()
 
   const {
     listening,
@@ -53,11 +51,14 @@ export const ModeGameWrapper = () => {
     }
   }
 
+  const { play } = useGetVoiceModel(data?.game[gameIndex]?.name ?? "")
+
+  const onPlay = () => {
+    play()
+  }
+
   useEffect(() => {
     if (data && finalTranscript) {
-
-      console.log('voice: ', finalTranscript.toLowerCase())
-      console.log('data: ', data.game[gameIndex].text.toLowerCase())
 
       if (finalTranscript.toLowerCase() === data.game[gameIndex].text.toLowerCase()) {
         setStatus('success')
@@ -85,7 +86,9 @@ export const ModeGameWrapper = () => {
         >
           <HomeIcon />
         </Link>
-        <SoundIcon />
+        <div onClick={() => onPlay()} className='cursor-pointer'>
+          <SoundIcon />
+        </div>
       </div>
 
       <div className="w-full max-w-md px-2 mt-5 sm:px-0">

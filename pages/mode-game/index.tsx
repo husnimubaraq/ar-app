@@ -11,7 +11,16 @@ const ModeGame: NextPageWithLayout = () => {
         <title>Mode Game</title>
       </Head>
 
-      <ModeGameWrapper />
+      <div
+        className="px-5 py-5"
+        style={{
+          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <ModeGameWrapper />
+      </div>
+      
     </>
   )
 }
