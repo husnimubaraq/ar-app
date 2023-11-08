@@ -1,4 +1,4 @@
-# ✨ Rapid Next ✨
+# AR App
 
 This is a simple starter boilerplate that provides a solid foundation for your next project. It incorporates the following features and libraries to help you build modern and efficient web applications.
 
@@ -24,10 +24,6 @@ This is a simple starter boilerplate that provides a solid foundation for your n
   - Prettier: An opinionated code formatter that ensures consistent code style throughout your project.
   - lint-staged: A tool that allows you to run linters on staged files, promoting code quality in your commits.
 
-## Live Demo 🌐
-
-Experience the boilerplate in action with our live demo. Click [here](https://example.com/) to explore it!
-
 ## Example 🚀
 
 We have included a comprehensive example to demonstrate the usage and capabilities of this boilerplate. Check out the example folder for more details.
@@ -42,7 +38,7 @@ To get started with this boilerplate immediately, follow these steps:
 1.  Clone the repository:
 
     ```
-    git clone https://github.com/hasan-almujtaba/rapid-next.git
+    git clone https://github.com/husnimubaraq/ar-app.git
     ```
 
 2.  Install dependencies using PNPM:
@@ -61,6 +57,3 @@ To get started with this boilerplate immediately, follow these steps:
 
 Feel free to customize the boilerplate to meet your specific requirements. Happy coding! 😄
 
-## License 📝
-
-This project is licensed under the [MIT License](https://chat.openai.com/LICENSE).
