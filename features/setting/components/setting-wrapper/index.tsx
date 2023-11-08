@@ -8,8 +8,10 @@ import useSound from 'use-sound';
 import sound from 'public/assets/sounds/sound.mp3';
 import { useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export const SettingWrapper = () => {
+    const { push } = useRouter()
 
     const [play, exposedData] = useSound(sound)
     const [musicStatus, setMusicStatus] = useState(true)

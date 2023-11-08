@@ -5,8 +5,10 @@ import { XIcon } from "components/icon"
 import { Footer } from "components/layouts"
 import { useCustomSound } from "hooks"
 import Link from "next/link"
+import { useRouter } from "next/router"
 
 export const InformationWrapper = () => {
+    const { push } = useRouter()
     
     useCustomSound()
 

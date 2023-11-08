@@ -44,7 +44,8 @@
     "tailwind-merge": "^1.14.0",
     "three": "^0.153.0",
     "threear": "1.0.0-alpha.5",
-    "use-sound": "^4.0.1"
+    "use-sound": "^4.0.1",
+    "react-share": "4.4.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.6",
