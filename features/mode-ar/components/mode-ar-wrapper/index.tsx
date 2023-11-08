@@ -10,14 +10,15 @@ import { data } from './data'
 
 import 'aframe';
 import 'mind-ar/dist/mindar-image-aframe.prod.js';
+import { useGetVoiceModel } from 'features/mode-ar';
+
 
 export const ModeArWrapper = () => {
 
   const sceneRef = useRef<any>(null)
   
+  const [title, setTitle] = useState('')
   const [name, setName] = useState('')
-
-  useCustomSound()
 
   useEffect(() => {
     const sceneEl = sceneRef?.current ?? null
@@ -36,26 +37,44 @@ export const ModeArWrapper = () => {
       const target = document.querySelector(`#${item.name}-target`)
 
       target?.addEventListener('targetFound', () => {
-        setName(item.title.toUpperCase())
+        setTitle(item.title.toUpperCase())
+        setName(item.name)
       })
 
       target?.addEventListener('targetLost', () => {
+        setTitle('')
         setName('')
       })
     }
   }, [])
 
+  const { play } = useGetVoiceModel(name)
+
+  const onPlay = () => {
+    play()
+  }
+
 
   return (
     <div>
-      <div className="flex justify-between items-end text-neutral-500">
-        <Link
-          href="/"
-          className="text-neutral-500  hover:text-orange-500"
-        >
-          <HomeIcon />
-        </Link>
-        <SoundIcon />
+      <div 
+        className="fixed top-0 left-0 right-0"
+        style={{
+          zIndex:1000
+        }}
+      >
+        <div className="flex justify-between items-end text-neutral-500 bg-white py-5 px-5">
+          <Link
+            href="/"
+            className="text-neutral-500  hover:text-orange-500"
+          >
+            <HomeIcon />
+          </Link>
+          
+          <div onClick={() => onPlay()} className='cursor-pointer'>
+            <SoundIcon />
+          </div>
+        </div>
       </div>
 
       <div className="container">
@@ -77,10 +96,10 @@ export const ModeArWrapper = () => {
           ))}
         </a-scene>
 
-        {name && (
+        {title && (
           <div className='fixed top-[11%] left-10 right-10'>
             <div className='bg-orange-500 rounded-md py-2 px-5'>
-              <h4 className='text-xl font-bold text-white text-center'>{name}</h4>
+              <h4 className='text-xl font-bold text-white text-center'>{title}</h4>
             </div>
           </div>
         )}

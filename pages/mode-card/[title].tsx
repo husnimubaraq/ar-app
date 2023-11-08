@@ -11,7 +11,15 @@ const ModeCardDetail: NextPageWithLayout = () => {
         <title>Detail Kartu</title>
       </Head>
 
-      <CModeCardDetail />
+      <div
+        className="px-5 py-5"
+        style={{
+          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <CModeCardDetail />
+      </div>
     </>
   )
 }

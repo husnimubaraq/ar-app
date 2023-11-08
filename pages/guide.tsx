@@ -11,7 +11,16 @@ const Guide: NextPageWithLayout = () => {
         <title>Guide</title>
       </Head>
 
-      <GuideWrapper />
+      <div
+        className="px-5 py-5"
+        style={{
+          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <GuideWrapper />
+      </div>
+      
     </>
   )
 }

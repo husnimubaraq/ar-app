@@ -11,7 +11,16 @@ const Information: NextPageWithLayout = () => {
         <title>Information</title>
       </Head>
 
-      <InformationWrapper />
+      <div
+        className="px-5 py-5"
+        style={{
+          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundPosition: 'center center',
+        }}
+      >
+        <InformationWrapper />
+      </div>
+      
     </>
   )
 }
