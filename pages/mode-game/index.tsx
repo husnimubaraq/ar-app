@@ -1,8 +1,11 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { ModeGameWrapper } from 'features/mode-game'
 import { NextPageWithLayout } from 'types'
+
+{/* @ts-expect-error Server Component */}
+const ModeGameWrapper = dynamic(() => import('features/mode-game').then((model) => model.ModeGameWrapper), {ssr: false})
+
 
 const ModeGame: NextPageWithLayout = () => {
   return (
