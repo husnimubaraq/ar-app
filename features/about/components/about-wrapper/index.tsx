@@ -4,6 +4,7 @@
 import { XIcon } from "components/icon"
 import { Footer } from "components/layouts"
 import { useCustomSound } from "hooks"
+import Link from "next/link"
 
 export const AboutWrapper = () => {
     
@@ -48,9 +49,11 @@ export const AboutWrapper = () => {
                 </div>
 
                 <div className="absolute -bottom-4 left-0 right-0 flex justify-center">
-                    <div className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
+                    <Link 
+                        href="/"
+                        className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
                         <XIcon width={30} height={30} />
-                    </div>
+                    </Link>
                 </div>
             </div>
 

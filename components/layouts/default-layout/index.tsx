@@ -9,7 +9,7 @@ export const DefaultLayout = ({ children, transparent = false }: Layout & TProps
   
   return (
     <div 
-      className={twMerge("mx-auto max-w-md overflow-y-auto", !transparent && "bg-[#f9f9f9]")}
+      className={twMerge("mx-auto max-w-md", !transparent && "bg-[#f9f9f9]")}
     >
       {children}
     </div>

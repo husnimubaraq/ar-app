@@ -7,6 +7,7 @@ import { WhatsappShareButton } from 'react-share'
 import useSound from 'use-sound';
 import sound from 'public/assets/sounds/sound.mp3';
 import { useEffect, useState } from "react"
+import Link from "next/link"
 
 export const SettingWrapper = () => {
 
@@ -74,9 +75,11 @@ export const SettingWrapper = () => {
                 </div>
 
                 <div className="absolute -bottom-4 left-0 right-0 flex justify-center">
-                    <div className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
+                    <Link 
+                        href="/"
+                        className="rounded-full text-white bg-neutral-500 w-fit flex flex-col items-center">
                         <XIcon width={30} height={30} />
-                    </div>
+                    </Link>
                 </div>
             </div>
 
