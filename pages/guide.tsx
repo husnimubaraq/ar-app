@@ -14,7 +14,7 @@ const Guide: NextPageWithLayout = () => {
       <div
         className="px-5 py-5"
         style={{
-          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundImage: 'url(/assets/images/background.jpg)',
           backgroundPosition: 'center center',
         }}
       >

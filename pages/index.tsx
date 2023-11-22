@@ -14,8 +14,15 @@ const Home: NextPageWithLayout = () => {
       <div
         className="px-5 py-5"
         style={{
-          backgroundImage: 'url(/assets/images/background.gif)',
-          backgroundPosition: 'center center',
+          backgroundImage: 'url(/assets/images/background.jpg)',
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "100vh",
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <HomeWrapper />

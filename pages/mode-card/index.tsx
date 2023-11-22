@@ -14,7 +14,7 @@ const ModeCard: NextPageWithLayout = () => {
       <div
         className="px-5 py-5 overflow-y-auto"
         style={{
-          backgroundImage: 'url(/assets/images/background.gif)',
+          backgroundImage: 'url(/assets/images/background.jpg)',
           backgroundPosition: 'center center',
         }}
       >
