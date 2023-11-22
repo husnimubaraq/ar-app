@@ -31,16 +31,22 @@ export const HomeWrapper = () => {
       <div className="flex flex-col items-center gap-y-10 mt-20">
         <Link
             href='/mode-ar'
-            className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center"
+            className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
+        >
+            PENGENALAN BENTUK
+        </Link>
+        <Link
+            href='/mode-ar'
+            className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
         >
             MODE AR
         </Link>
         
-        <Link href='/mode-game' className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">
+        <Link href='/mode-game' className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center">
             BERMAIN
         </Link>
 
-        <Link href="/mode-card" className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center">
+        <Link href="/mode-card" className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center">
             UNDUH KARTU
         </Link>
       </div>
