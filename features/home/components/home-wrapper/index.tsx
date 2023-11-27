@@ -8,7 +8,7 @@ import { useCustomSound } from "hooks"
 
 export const HomeWrapper = () => {
 
-  useCustomSound()
+  // useCustomSound()
     
   return (
     <div 
@@ -30,7 +30,7 @@ export const HomeWrapper = () => {
 
       <div className="flex flex-col items-center gap-y-10 mt-20">
         <Link
-            href='/mode-ar'
+            href='/intro'
             className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
         >
             PENGENALAN BENTUK

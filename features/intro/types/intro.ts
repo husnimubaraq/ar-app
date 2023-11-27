@@ -9,6 +9,8 @@ export type TModel = {
     image_url: string
     model: any
     scale: number
+    ar_scale: string
+    target: string
 }
 
 export type TCategoryModel = {
