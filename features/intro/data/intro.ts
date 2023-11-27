@@ -79,7 +79,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'frame',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.08 0.08 0.08'
             }
         ]
     },
@@ -105,7 +105,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.4,
                 name: 'coin',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '3 3 3'
             },
             {
                 image_url: "/assets/models/plates/ori.png",
@@ -132,7 +132,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 1,
                 name: 'cddvd',
                 target: 'target.mind',
-                ar_scale: '0.09 0.09 0.09'
+                ar_scale: '0.5 0.5 0.5'
             }
         ]
     },
