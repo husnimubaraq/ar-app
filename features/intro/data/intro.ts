@@ -167,7 +167,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'caution',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05'
+                ar_scale: '0.01 0.01 0.01'
             }
         ]
     }
@@ -181,7 +181,7 @@ export const dataIntro3D: TIntro[] = [
         },
         data: [
             {
-                image_url: "/assets/models/dice/low.jpg",
+                image_url: "/assets/models/dice/ori.png",
                 model: diceGlb,
                 text: 'Dadu',
                 scale: 1,
@@ -190,7 +190,7 @@ export const dataIntro3D: TIntro[] = [
                 ar_scale: '1 1 1'
             },
             {
-                image_url: "/assets/models/rubric/low.jpg",
+                image_url: "/assets/models/rubric/ori.png",
                 model: rubricGlb,
                 text: 'Rubrik',
                 scale: 15,
@@ -199,7 +199,7 @@ export const dataIntro3D: TIntro[] = [
                 ar_scale: '15 15 15'
             },
             {
-                image_url: "/assets/models/cardboard_box/low.jpg",
+                image_url: "/assets/models/cardboard_box/ori.png",
                 model: cardboardBoxGlb,
                 text: 'Kardus',
                 scale: 0.5,
@@ -210,16 +210,16 @@ export const dataIntro3D: TIntro[] = [
             {
                 image_url: "/assets/models/bathtub/ori.png",
                 model: bathtubGlb,
-                text: 'bathtub',
+                text: 'Bak Mandi',
                 scale: 0.5,
                 name: 'bathtub',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.01 0.01 0.01'
             },
             {
                 image_url: "/assets/models/gift/ori.png",
                 model: giftGlb,
-                text: 'gift',
+                text: 'Kotak Kado',
                 scale: 0.5,
                 name: 'gift',
                 target: 'target.mind',
@@ -234,7 +234,7 @@ export const dataIntro3D: TIntro[] = [
         },
         data: [
             {
-                image_url: "/assets/models/soccer-ball/low.jpg",
+                image_url: "/assets/models/soccer-ball/ori.png",
                 model: soccerBallGlb,
                 text: 'Bola Sepak',
                 scale: 1,
@@ -243,7 +243,7 @@ export const dataIntro3D: TIntro[] = [
                 ar_scale: '1 1 1'
             },
             {
-                image_url: "/assets/models/marbles/low.jpg",
+                image_url: "/assets/models/marbles/ori.png",
                 model: marblesGlb,
                 text: 'Kelereng',
                 scale: 15,
@@ -258,7 +258,7 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.02,
                 name: 'baseball',
                 target: 'target.mind',
-                ar_scale: '15 15 15'
+                ar_scale: '2.5 2.5 2.5'
             },
             {
                 image_url: "/assets/models/basketball/ori.png",
@@ -267,7 +267,7 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.4,
                 name: 'basketball',
                 target: 'target.mind',
-                ar_scale: '15 15 15'
+                ar_scale: '0.01 0.01 0.01'
             }
         ]
     },
