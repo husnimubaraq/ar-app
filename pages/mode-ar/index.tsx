@@ -1,8 +1,11 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { ModeArWrapper } from 'features/mode-ar'
 import { NextPageWithLayout } from 'types'
+import dynamic from 'next/dynamic'
+
+{/* @ts-expect-error Server Component */}
+const ModeArWrapper = dynamic(() => import('features/mode-ar').then((model) => model.ModeArWrapper), {ssr: false})
 
 const ModeAr: NextPageWithLayout = () => {
   return (

@@ -1,8 +1,11 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { ModeArList as PModeArList } from 'features/mode-ar'
 import { NextPageWithLayout } from 'types'
+import dynamic from 'next/dynamic'
+
+{/* @ts-expect-error Server Component */}
+const PModeArList = dynamic(() => import('features/mode-ar').then((model) => model.ModeArList), {ssr: false})
 
 const ModeArList: NextPageWithLayout = () => {
   return (

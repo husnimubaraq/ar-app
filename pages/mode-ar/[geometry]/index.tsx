@@ -1,8 +1,11 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { ModeArCategory as PModeArCategory } from 'features/mode-ar'
 import { NextPageWithLayout } from 'types'
+import dynamic from 'next/dynamic'
+
+{/* @ts-expect-error Server Component */}
+const PModeArCategory = dynamic(() => import('features/mode-ar').then((model) => model.ModeArCategory), {ssr: false})
 
 const ModeArCategory: NextPageWithLayout = () => {
   return (
