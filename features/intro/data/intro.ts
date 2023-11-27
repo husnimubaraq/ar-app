@@ -158,7 +158,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'flag',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05'
+                ar_scale: '5 5 5'
             },
             {
                 image_url: "/assets/models/caution/ori.png",
