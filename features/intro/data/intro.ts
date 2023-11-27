@@ -61,7 +61,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 3,
                 name: 'bread',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.03 0.03 0.03'
             },
             {
                 image_url: "/assets/models/paper/ori.png",
