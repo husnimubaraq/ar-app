@@ -49,17 +49,17 @@ export const ModeArCamera = () => {
         }
     }, [])
 
-    // useEffect(() => {
-    //     const target = document.querySelector(`#${data.name}-target`)
+    useEffect(() => {
+        const target = document.querySelector(`#ar-id`)
 
-    //     target?.addEventListener('targetFound', () => {
-    //         setIsOpen(true)
-    //     })
+        target?.addEventListener('targetFound', () => {
+            setIsOpen(true)
+        })
 
-    //     target?.addEventListener('targetLost', () => {
-    //         setIsOpen(false)
-    //     })
-    // }, [])
+        target?.addEventListener('targetLost', () => {
+            setIsOpen(false)
+        })
+    }, [])
 
     // const { play } = useGetVoiceModel(name)
 
@@ -91,17 +91,17 @@ export const ModeArCamera = () => {
 
             <div className="container">
                 {data && (
-                    <a-scene ref={sceneRef} mindar-image={`imageTargetSrc: ./assets/models/${data.name}/target.mind;uiScanning: no;`} color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+                    <a-scene ref={sceneRef} mindar-image={`imageTargetSrc: https://raw.githubusercontent.com/husnimubaraq/ar-app/main/public/assets/models/${data.name}/target.mind;uiScanning: no;`} color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
                         <a-assets>
                             <a-asset-item
                                 id={`ar-model`}
-                                src={`./assets/models/${data.name}/scene.gltf`}
+                                src={`https://raw.githubusercontent.com/husnimubaraq/ar-app/main/public/assets/models/${data.name}/scene.gltf`}
                             ></a-asset-item>
                         </a-assets>
 
                         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-                        <a-entity  mindar-image-target={`targetIndex: 0`}>
+                        <a-entity id="ar-id" mindar-image-target={`targetIndex: 0`}>
                             <a-gltf-model rotation="0 0 0 " position="0 -0.25 0" scale={data.ar_scale} src={`#ar-model`} animation-mixer></a-gltf-model>
                         </a-entity>
                     </a-scene>
