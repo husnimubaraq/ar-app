@@ -8,7 +8,7 @@ import { useCustomSound } from "hooks"
 
 export const HomeWrapper = () => {
 
-  // useCustomSound()
+  useCustomSound()
     
   return (
     <div 

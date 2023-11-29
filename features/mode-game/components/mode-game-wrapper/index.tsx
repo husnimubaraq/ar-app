@@ -4,10 +4,11 @@ import Link from "next/link"
 
 import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
+import { useCustomSound } from "hooks"
 
 export const ModeGameWrapper = () => {
 
-    // useCustomSound()
+    useCustomSound()
 
     return (
         <div className="">

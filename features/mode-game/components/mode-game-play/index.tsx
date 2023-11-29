@@ -15,6 +15,7 @@ import { FailedPopup } from "components/failed-popup"
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { useGetVoiceModel } from "features/mode-ar"
 import { useRouter } from "next/router"
+import useSound from "use-sound"
 
 export const ModeGamePlay = () => {
 
@@ -37,6 +38,8 @@ export const ModeGamePlay = () => {
 
     const data = dataGame.find((item) => item.level === dataGame[tabIndex].level)
 
+    const [play] = useSound(`/assets/sounds/pertanyaan.mp3`)
+
     const onNext = () => {
         if (data) {
             if (data.game.length - 1 === gameIndex) {
@@ -46,7 +49,12 @@ export const ModeGamePlay = () => {
                 setGameIndex(gameIndex + 1)
             }
         }
+        
         setStatus('idle')
+
+        setTimeout(() => {
+            play()
+        }, 2000)
     }
 
     const onMic = () => {
@@ -57,11 +65,11 @@ export const ModeGamePlay = () => {
         }
     }
 
-    const { play } = useGetVoiceModel(data?.game[gameIndex]?.name ?? "")
-
-    const onPlay = () => {
-        play()
-    }
+    useEffect(() => {
+        if(data){
+            play()
+        }
+    }, [play])
 
     useEffect(() => {
         if (data && finalTranscript) {
@@ -92,7 +100,7 @@ export const ModeGamePlay = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div onClick={() => onPlay()} className='cursor-pointer'>
+                <div onClick={() => play()} className='cursor-pointer'>
                     <SoundIcon />
                 </div>
             </div>
