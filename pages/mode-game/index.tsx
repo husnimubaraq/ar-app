@@ -7,7 +7,6 @@ import dynamic from 'next/dynamic'
 {/* @ts-expect-error Server Component */}
 const ModeGameWrapper = dynamic(() => import('features/mode-game').then((model) => model.ModeGameWrapper), {ssr: false})
 
-
 const ModeGame: NextPageWithLayout = () => {
   return (
     <>
@@ -19,7 +18,11 @@ const ModeGame: NextPageWithLayout = () => {
         className="px-5 py-5"
         style={{
           backgroundImage: 'url(/assets/images/background.jpg)',
-          backgroundPosition: 'center center',
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          width: "100vw",
+          height: "100vh",
         }}
       >
         <ModeGameWrapper />
