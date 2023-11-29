@@ -18,7 +18,7 @@ export const ModeArCategory = () => {
 
     const data = param === '2d' ? dataIntro2D : dataIntro3D
 
-    // useCustomSound()
+    useCustomSound()
 
     return (
         <div className="">

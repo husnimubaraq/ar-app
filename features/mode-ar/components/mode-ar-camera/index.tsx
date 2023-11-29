@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { HomeIcon, SoundIcon } from 'components/icon';
 import { useRouter } from "next/router"
+import useSound from 'use-sound'
 
 import { data } from './data'
 
@@ -37,6 +38,10 @@ export const ModeArCamera = () => {
 
     const [isOpen, setIsOpen] = useState(false)
 
+    const [play, {
+        stop
+    }] = useSound(`/assets/models/${data?.name}/sound.mp3`)
+
     useEffect(() => {
         const sceneEl = sceneRef?.current ?? null
         if (sceneEl) {
@@ -54,18 +59,16 @@ export const ModeArCamera = () => {
 
         target?.addEventListener('targetFound', () => {
             setIsOpen(true)
+            setTimeout(() => {
+                play()
+            }, 2000)
         })
 
         target?.addEventListener('targetLost', () => {
             setIsOpen(false)
+            stop()
         })
-    }, [])
-
-    // const { play } = useGetVoiceModel(name)
-
-    const onPlay = () => {
-        // play()
-    }
+    }, [play])
 
     return (
         <div>
@@ -83,7 +86,7 @@ export const ModeArCamera = () => {
                         <HomeIcon />
                     </Link>
 
-                    <div onClick={() => onPlay()} className='cursor-pointer'>
+                    <div onClick={() => play()} className='cursor-pointer'>
                         <SoundIcon />
                     </div>
                 </div>

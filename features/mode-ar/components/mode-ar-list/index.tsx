@@ -22,7 +22,7 @@ export const ModeArList = () => {
             : 
         dataIntro3D.find((item) => item.category.name === category)
 
-    // useCustomSound()
+    useCustomSound()
 
     return (
         <div className="">

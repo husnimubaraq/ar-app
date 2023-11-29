@@ -10,7 +10,7 @@ import { useCustomSound } from 'hooks'
 
 export const ModeArWrapper = () => {
 
-    // useCustomSound()
+    useCustomSound()
 
     return (
         <div className="">
