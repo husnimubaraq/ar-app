@@ -1,8 +1,10 @@
 'use client'
+
+import Link from "next/link"
+
 import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
-import Link from "next/link"
 import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
 
@@ -22,36 +24,33 @@ export const ModeCardWrapper = () => {
                 <SoundIcon />
             </div>
 
-            <div className="relative h-[80vh] mt-5">
-                <div className="grid grid-cols-3 gap-2">
-                    {dataCard.map((item, index) => (
-                        <Link
-                            key={index.toString()}
-                            href={`/mode-card/${item.title}`}
-                            className={twMerge(
-                                'p-2 rounded-md cursor-pointer border border-white hover:border-orange-500'
-                            )}
-                            style={{
-                                backgroundColor: item.color
-                            }}
-                        >
-                            <div
-                                className='bg-white rounded-t-md px-2 w-full h-[150px] flex flex-col items-center justify-center'
-                            >
-                                <Image
-                                    src={item.image_url}
-                                    width={200}
-                                    height={200}
-                                    className='object-cover'
-                                    alt={""}
-                                />
-                            </div>
+            <div className="flex flex-col justify-center h-[80vh] mt-5">
+                <div className="flex items-center justify-around">
+                    <Link
+                        href='mode-card/2d'
+                        className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
+                    >
+                        <Image
+                            src='/assets/images/geometry-2d.png'
+                            width={100}
+                            height={100}
+                            alt={""}
+                        />
+                        <p className='text-xl text-black font-medium text-center'>Bentuk Geometri 2D</p>
+                    </Link>
 
-                            <div className='flex flex-col items-center'>
-                                <label className='text-md text-white font-bold my-2 text-center'>{item.title}</label>
-                            </div>
-                        </Link>
-                    ))}
+                    <Link
+                        href='mode-card/3d'
+                        className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
+                    >
+                        <Image
+                            src='/assets/images/geometry-3d.png'
+                            width={100}
+                            height={100}
+                            alt={""}
+                        />
+                        <p className='text-xl text-black font-medium text-center'>Bentuk Geometri 3D</p>
+                    </Link>
                 </div>
             </div>
         </div>

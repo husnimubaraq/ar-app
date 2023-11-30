@@ -52,7 +52,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'chessboard',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#7db6e1'
             },
             {
                 image_url: "/assets/models/bread/ori.png",
@@ -61,7 +62,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 3,
                 name: 'bread',
                 target: 'target.mind',
-                ar_scale: '0.03 0.03 0.03'
+                ar_scale: '0.03 0.03 0.03',
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/paper/ori.png",
@@ -70,7 +72,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.1,
                 name: 'paper',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#938bb0'
             },
             {
                 image_url: "/assets/models/frame/ori.png",
@@ -79,7 +82,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'frame',
                 target: 'target.mind',
-                ar_scale: '0.08 0.08 0.08'
+                ar_scale: '0.08 0.08 0.08',
+                color: '#7db6e1'
             }
         ]
     },
@@ -96,7 +100,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 3,
                 name: 'clock',
                 target: 'target.mind',
-                ar_scale: '3 3 3'
+                ar_scale: '3 3 3',
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/coin/ori.png",
@@ -105,7 +110,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.4,
                 name: 'coin',
                 target: 'target.mind',
-                ar_scale: '3 3 3'
+                ar_scale: '3 3 3',
+                color: '#8ebb68'
             },
             {
                 image_url: "/assets/models/plates/ori.png",
@@ -114,7 +120,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.02,
                 name: 'plates',
                 target: 'target.mind',
-                ar_scale: '0.02 0.02 0.02'
+                ar_scale: '0.02 0.02 0.02',
+                color: '#7db6e1'
             },
             {
                 image_url: "/assets/models/wheel/ori.png",
@@ -123,7 +130,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.4,
                 name: 'wheel',
                 target: 'target.mind',
-                ar_scale: '0.09 0.09 0.09'
+                ar_scale: '0.09 0.09 0.09',
+                color: '#8ebb68'
             },
             {
                 image_url: "/assets/models/cddvd/ori.png",
@@ -132,7 +140,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 1,
                 name: 'cddvd',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#da7bb3'
             }
         ]
     },
@@ -149,7 +158,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.05,
                 name: 'hanger',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05'
+                ar_scale: '0.05 0.05 0.05',
+                color: '#e79353'
             },
             {
                 image_url: "/assets/models/flag/ori.png",
@@ -158,7 +168,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'flag',
                 target: 'target.mind',
-                ar_scale: '5 5 5'
+                ar_scale: '5 5 5',
+                color: '#938bb0'
             },
             {
                 image_url: "/assets/models/caution/ori.png",
@@ -167,7 +178,8 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'caution',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01'
+                ar_scale: '0.01 0.01 0.01',
+                color: '#e7cc57'
             }
         ]
     }
@@ -187,7 +199,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 1,
                 name: 'dice',
                 target: 'target.mind',
-                ar_scale: '1 1 1'
+                ar_scale: '1 1 1',
+                color: '#e79353'
             },
             {
                 image_url: "/assets/models/rubric/ori.png",
@@ -196,7 +209,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 15,
                 name: 'rubric',
                 target: 'target.mind',
-                ar_scale: '15 15 15'
+                ar_scale: '15 15 15',
+                color: '#da7bb3'
             },
             {
                 image_url: "/assets/models/cardboard_box/ori.png",
@@ -205,7 +219,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.5,
                 name: 'cardboard_box',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#7db6e1'
             },
             {
                 image_url: "/assets/models/bathtub/ori.png",
@@ -214,7 +229,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.5,
                 name: 'bathtub',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01'
+                ar_scale: '0.01 0.01 0.01',
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/gift/ori.png",
@@ -223,7 +239,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.5,
                 name: 'gift',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
             }
         ]
     },
@@ -240,7 +257,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 1,
                 name: 'soccer-ball',
                 target: 'target.mind',
-                ar_scale: '1 1 1'
+                ar_scale: '1 1 1',
+                color: '#938bb0'
             },
             {
                 image_url: "/assets/models/marbles/ori.png",
@@ -249,7 +267,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 15,
                 name: 'marbles',
                 target: 'target.mind',
-                ar_scale: '15 15 15'
+                ar_scale: '15 15 15',
+                color: '#da7bb3'
             },
             {
                 image_url: "/assets/models/baseball/ori.png",
@@ -258,7 +277,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.02,
                 name: 'baseball',
                 target: 'target.mind',
-                ar_scale: '2.5 2.5 2.5'
+                ar_scale: '2.5 2.5 2.5',
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/basketball/ori.png",
@@ -267,7 +287,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.4,
                 name: 'basketball',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01'
+                ar_scale: '0.01 0.01 0.01',
+                color: '#8ebb68'
             }
         ]
     },
@@ -284,7 +305,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.1,
                 name: 'can',
                 target: 'target.mind',
-                ar_scale: '0.03 0.03 0.03'
+                ar_scale: '0.03 0.03 0.03',
+                color: '#938bb0'
             },
             {
                 image_url: "/assets/models/gas/ori.png",
@@ -293,7 +315,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 1,
                 name: 'gas',
                 target: 'target.mind',
-                ar_scale: '1 1 1'
+                ar_scale: '1 1 1',
+                color: '#8ebb68'
             },
             {
                 image_url: "/assets/models/bucket/ori.png",
@@ -302,7 +325,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.05,
                 name: 'bucket',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01'
+                ar_scale: '0.01 0.01 0.01',
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/bottle/ori.png",
@@ -311,7 +335,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.15,
                 name: 'bottle',
                 target: 'target.mind',
-                ar_scale: '0.15 0.15 0.15'
+                ar_scale: '0.15 0.15 0.15',
+                color: '#da7bb3'
             },
             {
                 image_url: "/assets/models/cup/ori.png",
@@ -320,7 +345,8 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.5,
                 name: 'cup',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5'
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
             },
         ]
     }

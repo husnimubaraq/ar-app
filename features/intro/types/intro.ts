@@ -11,6 +11,7 @@ export type TModel = {
     scale: number
     ar_scale: string
     target: string
+    color?: string
 }
 
 export type TCategoryModel = {

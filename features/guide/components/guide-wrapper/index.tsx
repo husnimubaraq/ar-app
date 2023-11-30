@@ -14,7 +14,7 @@ export const GuideWrapper = () => {
 
     return (
         <div className="">
-            <div className="relative border-2 border-neutral-400 h-[70vh] mt-10 bg-[#aeffad]">
+            <div className="relative border-2 border-neutral-400 h-[70vh] mt-10 bg-[#fff]">
                 <div className="absolute -top-5 left-0 right-0" style={{zIndex: 10}}>
                     <div className="bg-neutral-200 py-2 rounded-full text-center mx-[10%] font-bold" >
                         <label>PANDUAN</label>
