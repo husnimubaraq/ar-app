@@ -23,16 +23,12 @@ export const ModeArCamera = () => {
     const category = query.category as string ?? ''
     const name = query.name as string ?? ''
 
-    console.log(geometry, category, name)
-
     const dataCategory = geometry === '2d' ?
         dataIntro2D.find((item) => item.category.name === category)
         :
         dataIntro3D.find((item) => item.category.name === category)
 
     const data = dataCategory?.data.find((item) => item.name === name)
-
-    console.log(data)
 
     const sceneRef = useRef<any>(null)
 

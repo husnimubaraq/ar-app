@@ -1,37 +1,38 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { ModeCardWrapper } from 'features/mode-card'
 import { NextPageWithLayout } from 'types'
+import dynamic from 'next/dynamic'
 
-const ModeCard: NextPageWithLayout = () => {
+{/* @ts-expect-error Server Component */}
+const PModeCardList = dynamic(() => import('features/mode-card').then((model) => model.ModeCardList), {ssr: false})
+
+const ModeCardList: NextPageWithLayout = () => {
   return (
     <>
       <Head>
-        <title>Unduh Kartu</title>
+        <title>Mode Card - List</title>
       </Head>
 
       <div
         className="px-5 py-5 overflow-y-auto"
         style={{
-          backgroundImage: 'url(/assets/images/background.jpg)',
+            backgroundImage: 'url(/assets/images/background.jpg)',
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             width: "100vw",
             height: "100vh",
-        }}
+          }}
       >
-        <ModeCardWrapper />
+        <PModeCardList />
       </div>
-
-      
     </>
   )
 }
 
-ModeCard.getLayout = (page) => {
+ModeCardList.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>
 }
 
-export default ModeCard
+export default ModeCardList

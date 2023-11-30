@@ -6,16 +6,26 @@ import Link from "next/link"
 import { twMerge } from "tailwind-merge"
 import { useRouter } from 'next/router'
 import { Button } from 'components/base'
+import { dataIntro2D, dataIntro3D } from 'features/intro'
 
 export const ModeCardDetail= () => {
     const { query } = useRouter()
-    
-    const detail = dataCard.find(item => item.title === query.title as string)
+
+    const geometry = query.geometry as string ?? '' 
+    const category = query.category as string ?? '' 
+    const name = query.name as string ?? ''
+
+    const dataCategory = geometry === '2d' ?
+        dataIntro2D.find((item) => item.category.name === category)
+        :
+        dataIntro3D.find((item) => item.category.name === category)
+
+    const detail = dataCategory?.data.find((item) => item.name === name)
 
     const onDownload = () => {
         var element = document.createElement("a");
-        element.setAttribute("href", detail?.card ?? '');
-        element.setAttribute("download", `${detail?.title}.pdf` ?? '');
+        element.setAttribute("href", `/assets/models/${detail?.name}/ori.png`);
+        element.setAttribute("download", `${detail?.name}.pdf` ?? '');
         element.style.display = "none";
         document.body.appendChild(element);
 
@@ -58,7 +68,7 @@ export const ModeCardDetail= () => {
                     </div>
 
                     <div className='flex flex-col items-center'>
-                        <label className='text-md text-white font-bold my-2 text-center'>{detail?.title}</label>
+                        <label className='text-md text-white font-bold my-2 text-center'>{detail?.text}</label>
                     </div>
                 </div>
 
