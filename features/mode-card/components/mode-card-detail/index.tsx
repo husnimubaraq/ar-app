@@ -24,7 +24,7 @@ export const ModeCardDetail= () => {
 
     const onDownload = () => {
         var element = document.createElement("a");
-        element.setAttribute("href", `/assets/models/${detail?.name}/ori.png`);
+        element.setAttribute("href", `/assets/models/${detail?.name}/card.pdf`);
         element.setAttribute("download", `${detail?.name}.pdf` ?? '');
         element.style.display = "none";
         document.body.appendChild(element);
