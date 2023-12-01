@@ -36,7 +36,7 @@ export const ModeArCamera = () => {
 
     const [play, {
         stop
-    }] = useSound(`/assets/models/${data?.name}/sound.mp3`)
+    }] = useSound(`/assets/models/${data?.name}/sound.wav`)
 
     useEffect(() => {
         const sceneEl = sceneRef?.current ?? null
