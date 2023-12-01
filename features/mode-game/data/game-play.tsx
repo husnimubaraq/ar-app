@@ -41,7 +41,7 @@ import cupGlb from 'public/assets/models/cup/scene.glb'
 export const dataGame2D: TModeGame[] = [
     {
         level: 'level-1',
-        title: 'Level 1',
+        title: 'Persegi',
         game: [
             {
                 image_url: "/assets/models/chessboard/ori.png",
@@ -75,7 +75,7 @@ export const dataGame2D: TModeGame[] = [
     },
     {
         level: 'level-2',
-        title: 'Level 2',
+        title: 'Lingkaran',
         game: [
             {
                 image_url: "/assets/models/clock/ori.png",
@@ -116,7 +116,7 @@ export const dataGame2D: TModeGame[] = [
     },
     {
         level: 'level-3',
-        title: 'Level 3',
+        title: 'Segitiga',
         game: [
             {
                 image_url: "/assets/models/hanger/ori.png",
@@ -146,7 +146,7 @@ export const dataGame2D: TModeGame[] = [
 export const dataGame3D: TModeGame[] = [
     {
         level: 'level-1',
-        title: 'Level 1',
+        title: 'Kubus',
         game: [
             {
                 image_url: "/assets/models/dice/ori.png",
@@ -187,7 +187,7 @@ export const dataGame3D: TModeGame[] = [
     },
     {
         level: 'level-2',
-        title: 'Level 2',
+        title: 'Bola',
         game: [
             {
                 image_url: "/assets/models/soccer-ball/ori.png",
@@ -221,7 +221,7 @@ export const dataGame3D: TModeGame[] = [
     },
     {
         level: 'level-3',
-        title: 'Level 3',
+        title: 'Tabung',
         game: [
             {
                 image_url: "/assets/models/can/ori.png",
