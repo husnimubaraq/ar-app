@@ -116,7 +116,7 @@ export const ModeGamePlay = () => {
                         }
                     }}
                 >
-                    <Tab.List className="flex space-x-1 rounded-xl bg-orange-900/20 p-1">
+                    {/* <Tab.List className="flex space-x-1 rounded-xl bg-orange-900/20 p-1">
                         {dataGame.map((item, index) => (
                             <Tab
                                 key={item.level}
@@ -135,7 +135,7 @@ export const ModeGamePlay = () => {
                                 {item.title}
                             </Tab>
                         ))}
-                    </Tab.List>
+                    </Tab.List> */}
 
                     <div className="relative h-[80vh] mt-5">
                         <Canvas>
