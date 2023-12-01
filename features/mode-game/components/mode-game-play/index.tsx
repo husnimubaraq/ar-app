@@ -74,7 +74,7 @@ export const ModeGamePlay = () => {
     useEffect(() => {
         if (data && finalTranscript) {
 
-            if (finalTranscript.toLowerCase() === data.game[gameIndex].text.toLowerCase()) {
+            if (finalTranscript.toLowerCase() === data.title.toLowerCase()) {
                 setStatus('success')
 
                 setTimeout(() => {
