@@ -23,9 +23,11 @@ export const HomeWrapper = () => {
     <div 
       className="h-[100vh]"
     >
-      <button onClick={onClick} className="flex flex-col items-end text-neutral-500">
-        <XIcon />
-      </button>
+      <div className="flex flex-col items-end text-neutral-500">
+        <button onClick={onClick} >
+          <XIcon />
+        </button>
+      </div>
 
       <div className="flex items-center justify-center gap-x-2 mt-10">
         <h1 className="font-bold text-6xl">AR</h1>
