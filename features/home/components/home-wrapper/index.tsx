@@ -9,14 +9,23 @@ import { useCustomSound } from "hooks"
 export const HomeWrapper = () => {
 
   useCustomSound()
+
+  const onClick = () => {
+    //@ts-ignore
+    window.ReactNativeWebView.postMessage(
+        JSON.stringify({
+            type: 'btn-exit'
+        })
+    )
+  }
     
   return (
     <div 
       className="h-[100vh]"
     >
-      <div className="flex flex-col items-end text-neutral-500">
+      <button onClick={onClick} className="flex flex-col items-end text-neutral-500">
         <XIcon />
-      </div>
+      </button>
 
       <div className="flex items-center justify-center gap-x-2 mt-10">
         <h1 className="font-bold text-6xl">AR</h1>
