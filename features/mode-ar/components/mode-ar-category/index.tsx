@@ -9,6 +9,7 @@ import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
 import { useRouter } from "next/router"
 import { dataIntro2D, dataIntro3D } from "features/intro"
+import { ButtonSound } from "components/button-sound"
 
 export const ModeArCategory = () => {
 
@@ -29,9 +30,7 @@ export const ModeArCategory = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div id="btn-sound">
-                    <SoundIcon />
-                </div>
+                <ButtonSound/>
             </div>
 
             <div className="flex flex-col items-center justify-center h-[60vh] gap-y-10 mt-20">

@@ -7,6 +7,7 @@ import { twMerge } from "tailwind-merge"
 import { useRouter } from 'next/router'
 import { Button } from 'components/base'
 import { dataIntro2D, dataIntro3D } from 'features/intro'
+import { ButtonSound } from 'components/button-sound'
 
 export const ModeCardDetail= () => {
     const { query } = useRouter()
@@ -43,9 +44,7 @@ export const ModeCardDetail= () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div id="btn-sound">
-                    <SoundIcon />
-                </div>
+                <ButtonSound/>
             </div>
 
             <div className="relative h-[80vh] mt-5">

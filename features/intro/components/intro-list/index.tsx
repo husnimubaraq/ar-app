@@ -11,6 +11,7 @@ import { Tab } from "@headlessui/react"
 import { useState } from "react"
 import { useRouter } from "next/router"
 import { dataIntro2D, dataIntro3D } from "features/intro"
+import { ButtonSound } from "components/button-sound"
 
 export const IntroList = () => {
 
@@ -33,9 +34,7 @@ export const IntroList = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div id="btn-sound">
-                    <SoundIcon />
-                </div>
+                <ButtonSound/>
             </div>
 
             <div className="w-full max-w-md  mt-5 sm:px-0">
