@@ -3,13 +3,13 @@ import sound from 'public/assets/sounds/sound.mp3';
 import { useEffect } from "react";
 
 export const useCustomSound = () => {
-    const [play, exposedData] = useSound(sound)
+    // const [play, exposedData] = useSound(sound)
 
-    useEffect(() => {
-        play()
+    // useEffect(() => {
+    //     play()
 
-        return () => {
-            exposedData.stop()
-        }
-    }, [play])
+    //     return () => {
+    //         exposedData.stop()
+    //     }
+    // }, [play])
 }

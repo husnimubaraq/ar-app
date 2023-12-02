@@ -21,7 +21,9 @@ export const IntroWrapper = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <SoundIcon />
+                <div id="btn-sound">
+                    <SoundIcon />
+                </div>
             </div>
 
             <div className="flex flex-col justify-center h-[80vh] mt-5">

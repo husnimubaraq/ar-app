@@ -31,7 +31,9 @@ export const ModeCardList = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <SoundIcon />
+                <div id="btn-sound">
+                    <SoundIcon />
+                </div>
             </div>
 
             <div className="relative h-[80vh] mt-5">
