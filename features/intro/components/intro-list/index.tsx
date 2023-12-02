@@ -33,7 +33,9 @@ export const IntroList = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <SoundIcon />
+                <div id="btn-sound">
+                    <SoundIcon />
+                </div>
             </div>
 
             <div className="w-full max-w-md  mt-5 sm:px-0">

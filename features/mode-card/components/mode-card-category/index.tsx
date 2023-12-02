@@ -29,7 +29,9 @@ export const ModeCardCategory = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <SoundIcon />
+                <div id="btn-sound">
+                    <SoundIcon />
+                </div>
             </div>
 
             <div className="flex flex-col items-center justify-center h-[60vh] gap-y-10 mt-20">
