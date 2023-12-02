@@ -5,6 +5,7 @@ import Link from "next/link"
 import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { useCustomSound } from "hooks"
+import { ButtonSound } from "components/button-sound"
 
 export const ModeGameWrapper = () => {
 
@@ -19,9 +20,7 @@ export const ModeGameWrapper = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div id="btn-sound">
-                    <SoundIcon />
-                </div>
+                <ButtonSound/>
             </div>
 
             <div className="flex flex-col justify-center h-[80vh] mt-5">

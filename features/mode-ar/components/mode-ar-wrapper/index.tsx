@@ -7,6 +7,7 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
+import { ButtonSound } from "components/button-sound"
 
 export const ModeArWrapper = () => {
 
@@ -21,9 +22,7 @@ export const ModeArWrapper = () => {
                 >
                     <HomeIcon />
                 </Link>
-                <div id="btn-sound">
-                    <SoundIcon />
-                </div>
+                <ButtonSound/>
             </div>
 
             <div className="flex flex-col justify-center h-[80vh] mt-5">
