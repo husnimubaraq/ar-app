@@ -55,7 +55,7 @@ export const dataGame2D: TModeGame[] = [
                 image_url: "/assets/models/window/ori.png",
                 model: windowGlb,
                 text: 'Jendela',
-                scale: 0.05,
+                scale: 0.7,
                 name: 'window',
             },
             {

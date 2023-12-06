@@ -63,7 +63,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 3,
                 name: 'window',
                 target: 'target.mind',
-                ar_scale: '0.03 0.03 0.03',
+                ar_scale: '0.7 0.7 0.7',
                 color: '#e7cc57'
             },
             {
