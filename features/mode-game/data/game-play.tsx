@@ -2,7 +2,8 @@ import { TModeGame } from 'features/mode-game';
 
 //square
 import chessboardGlb from 'public/assets/models/chessboard/scene.glb'
-import breadGlb from 'public/assets/models/bread/scene.glb'
+// import breadGlb from 'public/assets/models/bread/scene.glb'
+import windowGlb from 'public/assets/models/window/scene.glb'
 import paperGlb from 'public/assets/models/paper/scene.glb'
 import frameGlb from 'public/assets/models/frame/scene.glb'
 
@@ -51,11 +52,11 @@ export const dataGame2D: TModeGame[] = [
                 name: 'chessboard',
             },
             {
-                image_url: "/assets/models/bread/ori.png",
-                model: breadGlb,
-                text: 'Roti Tawar',
+                image_url: "/assets/models/window/ori.png",
+                model: windowGlb,
+                text: 'Jendela',
                 scale: 0.05,
-                name: 'bread',
+                name: 'window',
             },
             {
                 image_url: "/assets/models/paper/ori.png",

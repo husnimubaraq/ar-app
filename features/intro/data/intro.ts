@@ -2,7 +2,8 @@ import { TIntro } from 'features/intro'
 
 //square
 import chessboardGlb from 'public/assets/models/chessboard/scene.glb'
-import breadGlb from 'public/assets/models/bread/scene.glb'
+// import breadGlb from 'public/assets/models/bread/scene.glb'
+import windowGlb from 'public/assets/models/window/scene.glb'
 import paperGlb from 'public/assets/models/paper/scene.glb'
 import frameGlb from 'public/assets/models/frame/scene.glb'
 
@@ -56,11 +57,11 @@ export const dataIntro2D: TIntro[] = [
                 color: '#7db6e1'
             },
             {
-                image_url: "/assets/models/bread/ori.png",
-                model: breadGlb,
-                text: 'Roti Tawar',
+                image_url: "/assets/models/window/ori.png",
+                model: windowGlb,
+                text: 'Jendela',
                 scale: 3,
-                name: 'bread',
+                name: 'window',
                 target: 'target.mind',
                 ar_scale: '0.03 0.03 0.03',
                 color: '#e7cc57'
