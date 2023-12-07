@@ -43,7 +43,7 @@ export const dataIntro2D: TIntro[] = [
     {
         category: {
             name: 'square',
-            title: 'Persegi'
+            title: 'Segi 4'
         },
         data: [
             {

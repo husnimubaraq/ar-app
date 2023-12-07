@@ -6,12 +6,14 @@ import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
-import { useCustomSound } from 'hooks'
+import { useMenuSound } from 'hooks'
 import { Tab } from "@headlessui/react"
 import { useState } from "react"
 import { useRouter } from "next/router"
 import { dataIntro2D, dataIntro3D } from "features/intro"
 import { ButtonSound } from "components/button-sound"
+import shapeSound from 'public/assets/sounds/contohbenda.wav';
+import useSound from "use-sound"
 
 export const IntroList = () => {
 
@@ -23,7 +25,36 @@ export const IntroList = () => {
 
     const [tabIndex, setTabIndex] = useState(0)
 
-    useCustomSound()
+    const [playSquare] = useSound(`/assets/sounds/segiempat.wav`)
+    const [playCircle] = useSound(`/assets/sounds/lingkaran.mp3`)
+    const [playTriangle] = useSound(`/assets/sounds/segitiga.wav`)
+    const [playCube] = useSound(`/assets/sounds/kubus.mp3`)
+    const [playBall] = useSound(`/assets/sounds/bola.mp3`)
+    const [playTube] = useSound(`/assets/sounds/tabung.wav`)
+
+    useMenuSound(shapeSound)
+
+    const onClickTab = (index: number) => {
+        if(param === '2d'){
+            if(index === 0){
+                playSquare()
+            }else if(index === 1){
+                playCircle()
+            }else if(index === 2){
+                playTriangle()
+            }
+        }else{
+            if(index === 0){
+                playCube()
+            }else if(index === 1){
+                playBall()
+            }else if(index === 2){
+                playTube()
+            }
+        }
+        
+        setTabIndex(index)
+    }
 
     return (
         <div className="">
@@ -39,9 +70,7 @@ export const IntroList = () => {
 
             <div className="w-full max-w-md  mt-5 sm:px-0">
                 <Tab.Group
-                    onChange={(index) => {
-                        setTabIndex(index)
-                    }}
+                    onChange={onClickTab}
                 >
                     <Tab.List className="flex space-x-1 rounded-xl bg-orange-900/20 p-1">
                         {data.map((item, index) => (

@@ -4,12 +4,13 @@ import Link from "next/link"
 
 import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
-import { useCustomSound } from "hooks"
+import { useCustomSound, useMenuSound } from "hooks"
 import { ButtonSound } from "components/button-sound"
+import modeGameSound from 'public/assets/sounds/bermain.wav';
 
 export const ModeGameWrapper = () => {
 
-    useCustomSound()
+    useMenuSound(modeGameSound)
 
     return (
         <div className="">

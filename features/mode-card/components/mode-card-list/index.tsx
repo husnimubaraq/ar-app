@@ -7,6 +7,8 @@ import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
 import { useRouter } from 'next/router'
 import { dataIntro2D, dataIntro3D } from 'features/intro'
+import useSound from 'use-sound'
+import { useEffect } from 'react'
 
 export const ModeCardList = () => {
 
@@ -20,7 +22,36 @@ export const ModeCardList = () => {
             : 
         dataIntro3D.find((item) => item.category.name === category)
 
-    useCustomSound()
+    const [playSquare] = useSound(`/assets/sounds/segiempat.wav`)
+    const [playCircle] = useSound(`/assets/sounds/lingkaran.mp3`)
+    const [playTriangle] = useSound(`/assets/sounds/segitiga.wav`)
+    const [playCube] = useSound(`/assets/sounds/kubus.mp3`)
+    const [playBall] = useSound(`/assets/sounds/bola.mp3`)
+    const [playTube] = useSound(`/assets/sounds/tabung.wav`)
+
+    useEffect(() => {
+        if(category === 'square'){
+            playSquare()
+        }else if(category === 'circle'){
+            playCircle()
+        }else if(category === 'triangle'){
+            playTriangle()
+        }else if(category === 'cube'){
+            playCube()
+        }else if(category === 'ball'){
+            playBall()
+        }else if(category === 'tube'){
+            playTube()
+        }
+    }, [
+        category,
+        playSquare,
+        playCircle,
+        playTriangle,
+        playCube,
+        playBall,
+        playTube
+    ])
 
     return (
         <div className="">

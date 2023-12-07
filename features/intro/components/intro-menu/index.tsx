@@ -6,10 +6,12 @@ import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
-import { useCustomSound } from 'hooks'
+import { useCustomSound, useMenuSound } from 'hooks'
 import { useRouter } from "next/router"
 import useSound from "use-sound"
 import { useEffect } from "react"
+import geo2dSound from 'public/assets/sounds/geometri2d.wav';
+import geo3dSound from 'public/assets/sounds/geometri3d.wav';
 
 export const IntroMenu = () => {
 
@@ -29,6 +31,9 @@ export const IntroMenu = () => {
             stop()
         }
     }, [stop])
+
+    useMenuSound(param === '2d' ? geo2dSound : geo3dSound)
+
     return (
         <div className="">
             <div className="flex justify-between items-end text-neutral-500">
