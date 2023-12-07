@@ -16,6 +16,9 @@ import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognitio
 import { useGetVoiceModel } from "features/mode-ar"
 import { useRouter } from "next/router"
 import useSound from "use-sound"
+import { useMenuSound } from "hooks"
+import geo2dSound from 'public/assets/sounds/geometri2d.wav';
+import geo3dSound from 'public/assets/sounds/geometri3d.wav';
 
 export const ModeGamePlay = () => {
 
@@ -90,6 +93,8 @@ export const ModeGamePlay = () => {
 
         }
     }, [finalTranscript])
+
+    useMenuSound(param === '2d' ? geo2dSound : geo3dSound)
 
     return (
         <div className="h-[100vh]">

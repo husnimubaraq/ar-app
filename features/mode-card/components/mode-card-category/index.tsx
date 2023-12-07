@@ -6,9 +6,11 @@ import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
-import { useCustomSound } from 'hooks'
+import { useCustomSound, useMenuSound } from 'hooks'
 import { useRouter } from "next/router"
 import { dataIntro2D, dataIntro3D } from "features/intro"
+import geo2dSound from 'public/assets/sounds/geometri2d.wav';
+import geo3dSound from 'public/assets/sounds/geometri3d.wav';
 
 export const ModeCardCategory = () => {
 
@@ -18,7 +20,7 @@ export const ModeCardCategory = () => {
 
     const data = param === '2d' ? dataIntro2D : dataIntro3D
 
-    useCustomSound()
+    useMenuSound(param === '2d' ? geo2dSound : geo3dSound)
 
     return (
         <div className="">

@@ -6,12 +6,13 @@ import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
-import { useCustomSound } from 'hooks'
+import { useMenuSound } from 'hooks'
 import { ButtonSound } from "components/button-sound"
+import introSound from 'public/assets/sounds/pengenalanbentuk.wav';
 
 export const IntroWrapper = () => {
 
-    useCustomSound()
+    useMenuSound(introSound)
 
     return (
         <div className="">
