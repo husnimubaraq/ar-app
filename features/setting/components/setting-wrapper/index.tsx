@@ -13,21 +13,6 @@ import { useRouter } from "next/router"
 export const SettingWrapper = () => {
     const { push } = useRouter()
 
-    const [play, exposedData] = useSound(sound)
-    const [musicStatus, setMusicStatus] = useState(true)
-
-    useEffect(() => {
-        if(musicStatus){
-            play()
-        }else{
-            exposedData.stop()
-        }
-
-        return () => {
-            exposedData.stop()
-          }
-    }, [musicStatus, play, exposedData])
-
     return (
         <div className="">
             <div className="relative border-2 border-neutral-400 h-[70vh] mt-10">
@@ -41,13 +26,12 @@ export const SettingWrapper = () => {
                     <div className="flex items-center justify-around mt-[20%]">
                         <div 
                             onClick={() => {
-                                if(musicStatus){
-                                    // exposedData.stop()
-                                    setMusicStatus(false)
-                                }else{
-                                    // play()
-                                    setMusicStatus(true)
-                                }
+                                //@ts-ignore
+                                window.ReactNativeWebView.postMessage(
+                                    JSON.stringify({
+                                        type: 'btn-sound-inactive'
+                                    })
+                                )
                             }}
                             className="h-[50px] w-[50px] border border-neutral-400 cursor-pointer hover:bg-orange-500 rounded-full flex flex-col items-center justify-center bg-neutral-300"
                         >

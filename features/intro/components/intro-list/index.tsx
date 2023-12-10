@@ -25,12 +25,12 @@ export const IntroList = () => {
 
     const [tabIndex, setTabIndex] = useState(0)
 
-    const [playSquare] = useSound(`/assets/sounds/segiempat.wav`)
-    const [playCircle] = useSound(`/assets/sounds/lingkaran.mp3`)
-    const [playTriangle] = useSound(`/assets/sounds/segitiga.wav`)
-    const [playCube] = useSound(`/assets/sounds/kubus.mp3`)
-    const [playBall] = useSound(`/assets/sounds/bola.mp3`)
-    const [playTube] = useSound(`/assets/sounds/tabung.wav`)
+    const [playSquare] = useSound(`/assets/sounds/penjelasan_segiempat.mp3`)
+    const [playCircle] = useSound(`/assets/sounds/penjelasan_lingkaran.mp3`)
+    const [playTriangle] = useSound(`/assets/sounds/penjelasan_segitiga.mp3`)
+    const [playCube] = useSound(`/assets/sounds/penjelasan_kubus.mp3`)
+    const [playBall] = useSound(`/assets/sounds/penjelasan_bola.mp3`)
+    const [playTube] = useSound(`/assets/sounds/penjelasan_tabung.mp3`)
 
     useMenuSound(shapeSound)
 
