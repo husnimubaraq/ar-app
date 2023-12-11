@@ -14,13 +14,16 @@ export const ModeGameWrapper = () => {
 
     return (
         <div className="">
-            <div className="flex justify-between items-end text-neutral-500">
+            <div className="flex justify-between items-center text-neutral-500">
                 <Link
                     href="/"
                     className="text-neutral-500  hover:text-orange-500"
                 >
                     <HomeIcon />
                 </Link>
+                <div className="bg-white shadow rounded-lg py-2.5 text-sm font-medium text-orange-500 px-4">
+                    <h3 className="font-bold">Bermain</h3>
+                </div>
                 <ButtonSound/>
             </div>
 
