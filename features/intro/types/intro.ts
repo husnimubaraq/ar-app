@@ -17,4 +17,5 @@ export type TModel = {
 export type TCategoryModel = {
     name: string
     title: string
+    image_url?: string
 }

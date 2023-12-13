@@ -43,7 +43,8 @@ export const dataIntro2D: TIntro[] = [
     {
         category: {
             name: 'square',
-            title: 'Segi 4'
+            title: 'Segi 4',
+            image_url: '/assets/images/square.png'
         },
         data: [
             {
@@ -91,7 +92,8 @@ export const dataIntro2D: TIntro[] = [
     {
         category: {
             name: 'circle',
-            title: 'Lingkaran'
+            title: 'Lingkaran',
+            image_url: '/assets/images/circle.png'
         },
         data: [
             {
@@ -149,7 +151,8 @@ export const dataIntro2D: TIntro[] = [
     {
         category: {
             name: 'triangle',
-            title: 'Segitiga'
+            title: 'Segitiga',
+            image_url: '/assets/images/triangle.png'
         },
         data: [
             {
@@ -190,7 +193,8 @@ export const dataIntro3D: TIntro[] = [
     {
         category: {
             name: 'cube',
-            title: 'Kubus'
+            title: 'Kubus',
+            image_url: '/assets/images/cube.png'
         },
         data: [
             {
@@ -248,7 +252,8 @@ export const dataIntro3D: TIntro[] = [
     {
         category: {
             name: 'ball',
-            title: 'Bola'
+            title: 'Bola',
+            image_url: '/assets/images/ball.png'
         },
         data: [
             {
@@ -296,7 +301,8 @@ export const dataIntro3D: TIntro[] = [
     {
         category: {
             name: 'tube',
-            title: 'Tabung'
+            title: 'Tabung',
+            image_url: '/assets/images/tube.png'
         },
         data: [
             {

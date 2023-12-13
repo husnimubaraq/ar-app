@@ -54,15 +54,27 @@ export const IntroMenu = () => {
             <div className="flex flex-col items-center justify-center h-[60vh] gap-y-10 mt-20">
                 <div
                     onClick={() => play()}
-                    className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer"
+                    className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center cursor-pointer"
                 >
-                    Penjelasan
+                    <Image
+                        src='/assets/images/presentation.png'
+                        width={100}
+                        height={100}
+                        alt={""}
+                    />
+                    <p className='text-xl text-black font-medium text-center'>Penjelasan</p>
                 </div>
                 <Link
                     href={`list/${param}`}
-                    className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
+                    className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
                 >
-                    Contoh Benda
+                    <Image
+                        src='/assets/images/geometry.png'
+                        width={100}
+                        height={100}
+                        alt={""}
+                    />
+                    <p className='text-xl text-black font-medium text-center'>Contoh Benda</p>
                 </Link>
             </div>
         </div>

@@ -43,9 +43,15 @@ export const ModeArCategory = () => {
                     <Link
                         key={index}
                         href={`${param}/category/${item.category.name}`}
-                        className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
+                        className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
                     >
-                        {item.category.title}
+                        <Image
+                            src={item.category.image_url}
+                            width={70}
+                            height={70}
+                            alt={""}
+                        />
+                        <p className='text-xl text-black font-medium text-center'>{item.category.title}</p>
                     </Link>
                 ))}
             </div>
