@@ -46,7 +46,7 @@ export const ModeArCategory = () => {
                         className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
                     >
                         <Image
-                            src={item.category.image_url}
+                            src={item.category.image_url ?? ""}
                             width={70}
                             height={70}
                             alt={""}
