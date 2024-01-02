@@ -42,7 +42,7 @@ import cupGlb from 'public/assets/models/cup/scene.glb'
 export const dataGame2D: TModeGame[] = [
     {
         level: 'level-1',
-        title: 'Persegi',
+        title: 'Segi Empat',
         game: [
             {
                 image_url: "/assets/models/chessboard/ori.png",
