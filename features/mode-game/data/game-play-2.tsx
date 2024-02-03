@@ -70,13 +70,6 @@ export const dataGameTKA2D: TModeGame[] = [
         title: 'Lingkaran',
         game: [
             {
-                image_url: "/assets/models/egg_sunny/ori.png",
-                model: eggSunnyGlb,
-                text: 'Telur Mata Sapi',
-                scale: 0.4,
-                name: 'egg_sunny',
-            },
-            {
                 image_url: "/assets/models/sunflower/ori.png",
                 model: sunflowerGlb,
                 text: 'Bunga Matahari',

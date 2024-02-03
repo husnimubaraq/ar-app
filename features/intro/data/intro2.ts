@@ -52,7 +52,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.5,
                 name: 'biscuit',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5',
+                ar_scale: '10 10 10',
                 color: '#7db6e1'
             },
             {
@@ -62,7 +62,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 3,
                 name: 'door',
                 target: 'target.mind',
-                ar_scale: '0.7 0.7 0.7',
+                ar_scale: '5 5 5',
                 color: '#e7cc57'
             },
             {
@@ -85,23 +85,13 @@ export const dataIntroTKA2D: TIntro[] = [
         },
         data: [
             {
-                image_url: "/assets/models/egg_sunny/ori.png",
-                model: eggSunnyGlb,
-                text: 'Telur Mata Sapi',
-                scale: 0.4,
-                name: 'egg_sunny',
-                target: 'target.mind',
-                ar_scale: '3 3 3',
-                color: '#8ebb68'
-            },
-            {
                 image_url: "/assets/models/sunflower/ori.png",
                 model: sunflowerGlb,
                 text: 'Bunga Matahari',
                 scale: 0.02,
                 name: 'sunflower',
                 target: 'target.mind',
-                ar_scale: '0.02 0.02 0.02',
+                ar_scale: '5 5 5',
                 color: '#7db6e1'
             },
             {
@@ -140,7 +130,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.05,
                 name: 'watermelon',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05',
+                ar_scale: '0.005 0.005 0.005',
                 color: '#e79353'
             },
             {
@@ -231,7 +221,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'orange',
                 target: 'target.mind',
-                ar_scale: '10 10 10',
+                ar_scale: '1 1 1',
                 color: '#938bb0'
             },
             {
@@ -241,7 +231,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 15,
                 name: 'egg',
                 target: 'target.mind',
-                ar_scale: '15 15 15',
+                ar_scale: '3 3 3',
                 color: '#da7bb3'
             },
             {
@@ -290,7 +280,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'jar',
                 target: 'target.mind',
-                ar_scale: '1 1 1',
+                ar_scale: '10 10 10',
                 color: '#8ebb68'
             },
             {
