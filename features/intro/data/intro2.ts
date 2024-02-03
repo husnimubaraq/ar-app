@@ -130,7 +130,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.05,
                 name: 'watermelon',
                 target: 'target.mind',
-                ar_scale: '0.005 0.005 0.005',
+                ar_scale: '0.1 0.1 0.1',
                 color: '#e79353'
             },
             {
@@ -221,7 +221,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'orange',
                 target: 'target.mind',
-                ar_scale: '1 1 1',
+                ar_scale: '0.3 0.3 0.3',
                 color: '#938bb0'
             },
             {
@@ -280,7 +280,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'jar',
                 target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#8ebb68'
             },
             {
@@ -290,7 +290,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 0.15,
                 name: 'oil_drum',
                 target: 'target.mind',
-                ar_scale: '2 2 2',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#da7bb3'
             },
         ]
