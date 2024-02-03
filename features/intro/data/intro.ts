@@ -189,7 +189,7 @@ export const dataIntro2D: TIntro[] = [
             {
                 image_url: "/assets/models/bottle_cap/ori.png",
                 model: bottleCapGlb,
-                text: 'Kancing',
+                text: 'Tutup Botol',
                 scale: 1,
                 name: 'bottle_cap',
                 target: 'target.mind',

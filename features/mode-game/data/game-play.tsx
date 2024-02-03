@@ -147,7 +147,7 @@ export const dataGame2D: TModeGame[] = [
             {
                 image_url: "/assets/models/bottle_cap/ori.png",
                 model: bottleCapGlb,
-                text: 'Kancing',
+                text: 'Tutup Botol',
                 scale: 1,
                 name: 'bottle_cap',
             }
