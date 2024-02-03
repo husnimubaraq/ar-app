@@ -51,7 +51,7 @@ export const ModeCardDetail= () => {
         <div className="">
             <div className="flex justify-between items-end text-neutral-500">
                 <Link
-                    href="/"
+                    href={`/home?group=${group}`}
                     className="text-neutral-500  hover:text-orange-500"
                 >
                     <HomeIcon />

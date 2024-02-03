@@ -87,7 +87,7 @@ export const ModeArCamera = () => {
             >
                 <div className="flex justify-between items-end text-neutral-500 bg-white py-5 px-5">
                     <Link
-                        href="/"
+                        href={`/home?group=${group}`}
                         className="text-neutral-500  hover:text-orange-500"
                     >
                         <HomeIcon />

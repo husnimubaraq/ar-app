@@ -26,7 +26,7 @@ export const GuideWrapper = () => {
                         className='rounded-t-md w-full h-[65vh] flex flex-col items-center justify-center overflow-auto'
                     >
                         <img
-                            src={'/assets/images/panduan3.jpg'}
+                            src={'/assets/images/panduan4.png'}
                             className='w-full h-full object-contain'
                         />
                     </div>
