@@ -65,16 +65,6 @@ export const dataIntroTKA2D: TIntro[] = [
                 ar_scale: '0.009 0.009 0.009',
                 color: '#e7cc57'
             },
-            {
-                image_url: "/assets/models/soap/ori.png",
-                model: soapGlb,
-                text: 'Sabun Batang',
-                scale: 0.1,
-                name: 'soap',
-                target: 'target.mind',
-                ar_scale: '0.5 0.5 0.5',
-                color: '#938bb0'
-            },
         ]
     },
     {
@@ -221,7 +211,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'orange',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05',
+                ar_scale: '0.005 0.005 0.005',
                 color: '#938bb0'
             },
             {
@@ -231,7 +221,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 15,
                 name: 'egg',
                 target: 'target.mind',
-                ar_scale: '0.05 0.05 0.05',
+                ar_scale: '0.1 0.1 0.1',
                 color: '#da7bb3'
             },
             {
