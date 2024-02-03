@@ -52,7 +52,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.5,
                 name: 'biscuit',
                 target: 'target.mind',
-                ar_scale: '10 10 10',
+                ar_scale: '1 1 1',
                 color: '#7db6e1'
             },
             {
@@ -62,7 +62,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 3,
                 name: 'door',
                 target: 'target.mind',
-                ar_scale: '5 5 5',
+                ar_scale: '0.009 0.009 0.009',
                 color: '#e7cc57'
             },
             {
@@ -91,7 +91,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.02,
                 name: 'sunflower',
                 target: 'target.mind',
-                ar_scale: '5 5 5',
+                ar_scale: '0.01 0.01 0.01',
                 color: '#7db6e1'
             },
             {
@@ -280,7 +280,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'jar',
                 target: 'target.mind',
-                ar_scale: '10 10 10',
+                ar_scale: '0.5 0.5 0.5',
                 color: '#8ebb68'
             },
             {
@@ -290,7 +290,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 0.15,
                 name: 'oil_drum',
                 target: 'target.mind',
-                ar_scale: '0.15 0.15 0.15',
+                ar_scale: '2 2 2',
                 color: '#da7bb3'
             },
         ]

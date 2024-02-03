@@ -173,7 +173,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 1,
                 name: 'one_ring',
                 target: 'target.mind',
-                ar_scale: '5 5 5',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#da7bb3'
             },
             {
