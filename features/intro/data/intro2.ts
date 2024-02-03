@@ -52,7 +52,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.5,
                 name: 'biscuit',
                 target: 'target.mind',
-                ar_scale: '1 1 1',
+                ar_scale: '2 2 2',
                 color: '#7db6e1'
             },
             {
