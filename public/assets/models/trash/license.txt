@@ -1,0 +1,11 @@
+Model Information:
+* title:	Trash can
+* source:	https://sketchfab.com/3d-models/trash-can-576e6bcadb764bb5ad91bf48d93a95a5
+* author:	Holydust (https://sketchfab.com/Holydust)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Trash can" (https://sketchfab.com/3d-models/trash-can-576e6bcadb764bb5ad91bf48d93a95a5) by Holydust (https://sketchfab.com/Holydust) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

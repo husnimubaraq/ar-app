@@ -1,0 +1,11 @@
+Model Information:
+* title:	Watermelon Jelly
+* source:	https://sketchfab.com/3d-models/watermelon-jelly-2e0d1a99f9b54f07a03b26784d0f6a90
+* author:	Abdurhman Aljakthami (https://sketchfab.com/penpcm)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Watermelon Jelly" (https://sketchfab.com/3d-models/watermelon-jelly-2e0d1a99f9b54f07a03b26784d0f6a90) by Abdurhman Aljakthami (https://sketchfab.com/penpcm) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

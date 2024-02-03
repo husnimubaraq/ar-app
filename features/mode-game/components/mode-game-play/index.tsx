@@ -3,10 +3,10 @@
 import Link from "next/link"
 
 import { HomeIcon, SoundIcon } from "components/icon"
-import { ModeGamePlayModel, TGame, dataGame2D, dataGame3D } from "features/mode-game"
+import { ModeGamePlayModel, TGame, dataGame2D, dataGame3D, dataGameTKA2D, dataGameTKA3D } from "features/mode-game"
 import { Tab } from "@headlessui/react"
 import { twMerge } from "tailwind-merge"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useMemo } from "react"
 import { Canvas } from "@react-three/fiber";
 import { Environment, OrbitControls } from "@react-three/drei";
 import Image from "next/image"
@@ -36,8 +36,15 @@ export const ModeGamePlay = () => {
     const [gameIndex, setGameIndex] = useState(0)
 
     const param = query.geometry as string ?? ''
+    const group = query.group as string ?? ''
 
-    const dataGame = param === '2d' ? dataGame2D : dataGame3D
+    const dataGame = useMemo(() => {
+        if(group === "TKA"){
+            return param === '2d' ? dataGameTKA2D : dataGameTKA3D
+        }else{
+            return param === '2d' ? dataGame2D : dataGame3D
+        }
+    }, [param, group])
 
     const data = dataGame.find((item) => item.level === dataGame[tabIndex].level)
 
@@ -124,26 +131,6 @@ export const ModeGamePlay = () => {
                         }
                     }}
                 >
-                    {/* <Tab.List className="flex space-x-1 rounded-xl bg-orange-900/20 p-1">
-                        {dataGame.map((item, index) => (
-                            <Tab
-                                key={item.level}
-                                disabled={tabIndex < index ? true : false}
-                                className={({ selected }) =>
-                                    twMerge(
-                                        'w-full rounded-lg py-2.5 text-sm font-medium leading-5 text-orange-700',
-                                        'ring-white ring-opacity-60 ring-offset-2 ring-offset-orange-400 focus:outline-none focus:ring-2',
-                                        tabIndex < index && 'bg-neutral-300',
-                                        tabIndex === index
-                                            ? 'bg-white shadow'
-                                            : 'text-orange-500 hover:bg-white/[0.12] hover:text-white'
-                                    )
-                                }
-                            >
-                                {item.title}
-                            </Tab>
-                        ))}
-                    </Tab.List> */}
 
                     <div className="relative h-[80vh] mt-5">
                         <Canvas>
@@ -166,7 +153,8 @@ export const ModeGamePlay = () => {
                         </Canvas>
                         {status === 'idle' ? (
                             <div
-                                onClick={onMic}
+                                // onClick={onMic}
+                                onClick={onNext}
                                 className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
                             >
                                 <div className="flex items-center justify-center gap-x-2 hover:text-white">

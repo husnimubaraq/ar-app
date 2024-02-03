@@ -8,9 +8,13 @@ import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useMenuSound } from 'hooks'
 import { ButtonSound } from "components/button-sound"
+import { useRouter } from "next/router"
 import introSound from 'public/assets/sounds/pengenalanbentuk.wav';
 
 export const IntroWrapper = () => {
+    const { query } = useRouter()
+
+    const group = query.group as string ?? '' 
 
     useMenuSound(introSound)
 
@@ -18,7 +22,7 @@ export const IntroWrapper = () => {
         <div className="">
             <div className="flex justify-between items-center text-neutral-500">
                 <Link
-                    href="/"
+                    href={`/home?group=${group}`}
                     className="text-neutral-500 hover:text-orange-500"
                 >
                     <HomeIcon />
@@ -34,7 +38,7 @@ export const IntroWrapper = () => {
             <div className="flex flex-col justify-center h-[80vh] mt-5">
                 <div className="flex items-center justify-around">
                     <Link
-                        href='intro/2d'
+                        href={`intro/2d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
@@ -47,7 +51,7 @@ export const IntroWrapper = () => {
                     </Link>
 
                     <Link
-                        href='intro/3d'
+                        href={`intro/3d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image

@@ -7,8 +7,9 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useMenuSound } from 'hooks'
+import { useMemo } from "react"
 import { useRouter } from "next/router"
-import { dataIntro2D, dataIntro3D } from "features/intro"
+import { dataIntro2D, dataIntro3D, dataIntroTKA2D, dataIntroTKA3D } from "features/intro"
 import { ButtonSound } from "components/button-sound"
 import geo2dSound from 'public/assets/sounds/geometri2d.wav';
 import geo3dSound from 'public/assets/sounds/geometri3d.wav';
@@ -18,8 +19,15 @@ export const ModeArCategory = () => {
     const { query } = useRouter()
 
     const param = query.geometry as string ?? '' 
+    const group = query.group as string ?? ''
 
-    const data = param === '2d' ? dataIntro2D : dataIntro3D
+    const data = useMemo(() => {
+        if(group === "TKA"){
+            return param === '2d' ? dataIntroTKA2D : dataIntroTKA3D
+        }else{
+            return param === '2d' ? dataIntro2D : dataIntro3D
+        }
+    }, [param, group])
 
     useMenuSound(param === '2d' ? geo2dSound : geo3dSound)
 
@@ -42,7 +50,7 @@ export const ModeArCategory = () => {
                 {data.map((item, index) => (
                     <Link
                         key={index}
-                        href={`${param}/category/${item.category.name}`}
+                        href={`${param}/category/${item.category.name}?group=${group}`}
                         className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
                     >
                         <Image

@@ -1,0 +1,11 @@
+Model Information:
+* title:	PBIS Lunchbox
+* source:	https://sketchfab.com/3d-models/pbis-lunchbox-3676d679661d4521a8134f16d74865ac
+* author:	itd_cnr (https://sketchfab.com/itd_cnr)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "PBIS Lunchbox" (https://sketchfab.com/3d-models/pbis-lunchbox-3676d679661d4521a8134f16d74865ac) by itd_cnr (https://sketchfab.com/itd_cnr) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

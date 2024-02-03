@@ -1,10 +1,10 @@
 import Head from 'next/head'
 
 import { DefaultLayout } from 'components/layouts'
-import { HomeWrapper } from 'features/home'
+import { MainWrapper } from 'features/home'
 import { NextPageWithLayout } from 'types'
 
-const Home: NextPageWithLayout = () => {
+const Main: NextPageWithLayout = () => {
   return (
     <>
       <Head>
@@ -22,14 +22,14 @@ const Home: NextPageWithLayout = () => {
           height: "100vh",
         }}
       >
-        <HomeWrapper />
+        <MainWrapper />
       </div>
     </>
   )
 }
 
-Home.getLayout = (page) => {
+Main.getLayout = (page) => {
   return <DefaultLayout>{page}</DefaultLayout>
 }
 
-export default Home
+export default Main

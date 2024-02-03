@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cream Biscuit
+* source:	https://sketchfab.com/3d-models/cream-biscuit-bdbc245ebc6e4716966d5936c9716e70
+* author:	Funisaki (https://sketchfab.com/funisaki)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cream Biscuit" (https://sketchfab.com/3d-models/cream-biscuit-bdbc245ebc6e4716966d5936c9716e70) by Funisaki (https://sketchfab.com/funisaki) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

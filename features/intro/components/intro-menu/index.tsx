@@ -18,6 +18,7 @@ export const IntroMenu = () => {
     const { query } = useRouter()
 
     const param = query.geometry as string ?? '' 
+    const group = query.group as string ?? '' 
 
     const [play, {
         stop
@@ -38,7 +39,7 @@ export const IntroMenu = () => {
         <div className="">
             <div className="flex justify-between items-center text-neutral-500">
                 <Link
-                    href="/"
+                    href={`/home?group=${group}`}
                     className="text-neutral-500  hover:text-orange-500"
                 >
                     <HomeIcon />
@@ -65,7 +66,7 @@ export const IntroMenu = () => {
                     <p className='text-xl text-black font-medium text-center'>Penjelasan</p>
                 </div>
                 <Link
-                    href={`list/${param}`}
+                    href={`list/${param}?group=${group}`}
                     className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
                 >
                     <Image

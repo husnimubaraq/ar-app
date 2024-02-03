@@ -3,20 +3,20 @@
 import Link from "next/link"
 import Image from 'next/image'
 import { XIcon } from "components/icon"
+import { useRouter } from "next/router"
 import { Footer } from "components/layouts"
 import { useCustomSound } from "hooks"
 
 export const HomeWrapper = () => {
+  const { query, push } = useRouter()
+
+  const group = query.group as string ?? '' 
 
   useCustomSound()
 
   const onClick = () => {
-    //@ts-ignore
-    window.ReactNativeWebView.postMessage(
-        JSON.stringify({
-            type: 'btn-exit'
-        })
-    )
+    push('/')
+    
   }
     
   return (
@@ -41,7 +41,7 @@ export const HomeWrapper = () => {
 
       <div className="flex flex-col items-center gap-y-5 mt-10">
         <Link
-            href='/intro'
+            href={`/intro?group=${group}`}
             className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
         >
             <Image
@@ -53,7 +53,7 @@ export const HomeWrapper = () => {
             <p className='text-xl text-black font-medium text-center'>Pengenalan Bentuk</p>
         </Link>
         <Link
-            href='/mode-ar'
+            href={`/mode-ar?group=${group}`}
             className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
         >
             <Image
@@ -65,7 +65,9 @@ export const HomeWrapper = () => {
             <p className='text-xl text-black font-medium text-center'>Mode AR</p>
         </Link>
         
-        <Link href='/mode-game' className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center">
+        <Link 
+          href={`/mode-game?group=${group}`}
+          className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center">
             <Image
                 src='/assets/images/play.png'
                 width={70}

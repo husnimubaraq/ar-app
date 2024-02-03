@@ -1,32 +1,4 @@
 
-// import cardboardBoxMp3 from 'public/assets/models/cardboard_box/voice.mp3'
-// import cardboardLowpolyMp3 from 'public/assets/models/cardboard_lowpoly/voice.mp3'
-// import clockMp3 from 'public/assets/models/clock/voice.mp3'
-// import bookMp3 from 'public/assets/models/book/voice.mp3'
-// import kiteMp3 from 'public/assets/models/kite/voice.mp3'
-// import soccerBallMp3 from 'public/assets/models/soccer-ball/voice.mp3'
-// import whiteboardMp3 from 'public/assets/models/whiteboard/voice.mp3'
-// import marblesMp3 from 'public/assets/models/marbles/voice.mp3'
-// import smartphoneMp3 from 'public/assets/models/smartphone/voice.mp3'
-// import bucketMp3 from 'public/assets/models/bucket/voice.mp3'
-// import wheelMp3 from 'public/assets/models/wheel/voice.mp3'
-// import diceMp3 from 'public/assets/models/dice/voice.mp3'
-// import balloonsMp3 from 'public/assets/models/balloons/voice.mp3'
-// import canMp3 from 'public/assets/models/can/voice.mp3'
-// import platesMp3 from 'public/assets/models/plates/voice.mp3'
-// import eraserMp3 from 'public/assets/models/eraser/voice.mp3'
-// import radioMp3 from 'public/assets/models/radio/voice.mp3'
-// import cupMp3 from 'public/assets/models/cup/voice.mp3'
-// import hangerMp3 from 'public/assets/models/hanger/voice.mp3'
-// import chairMp3 from 'public/assets/models/chair/voice.mp3'
-// import bellMp3 from 'public/assets/models/bell/voice.mp3'
-// import fanMp3 from 'public/assets/models/fan/voice.mp3'
-// import bottleMp3 from 'public/assets/models/bottle/voice.mp3'
-// import glassBowlMp3 from 'public/assets/models/glass_bowl/voice.mp3'
-// import conicalHatMp3 from 'public/assets/models/conical_hat/voice.mp3'
-// import gasMp3 from 'public/assets/models/gas/voice.mp3'
-// import rubricMp3 from 'public/assets/models/rubric/voice.mp3'
-
 export const data = [
     {
         name: "cardboard_box",
@@ -217,4 +189,22 @@ export const data = [
         url: "./assets/models/gas/scene.gltf",
         // voice: gasMp3,
     },
+    {
+        name: "tele",
+        title: "TV",
+        scale: "1 1 1",
+        url: "./assets/models/tele/scene.gltf",
+        // voice: gasMp3,
+    },
+]
+
+export const dataA = [
+    {
+        name: "cardboard_box",
+        title: "Kontak Kardus",
+        scale: "0.5 0.5 0.5",
+        url: "./assets/models/cardboard_box/scene.gltf",
+        // voice: cardboardBoxMp3,
+    },
+
 ]

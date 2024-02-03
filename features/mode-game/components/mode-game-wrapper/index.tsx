@@ -5,10 +5,14 @@ import Link from "next/link"
 import Image from 'next/image'
 import { HomeIcon, SoundIcon } from "components/icon"
 import { useCustomSound, useMenuSound } from "hooks"
+import { useRouter } from "next/router"
 import { ButtonSound } from "components/button-sound"
 import modeGameSound from 'public/assets/sounds/bermain.wav';
 
 export const ModeGameWrapper = () => {
+    const { query } = useRouter()
+
+    const group = query.group as string ?? ''
 
     useMenuSound(modeGameSound)
 
@@ -30,7 +34,7 @@ export const ModeGameWrapper = () => {
             <div className="flex flex-col justify-center h-[80vh] mt-5">
                 <div className="flex items-center justify-around">
                     <Link
-                        href='mode-game/2d'
+                        href={`mode-game/2d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
@@ -43,7 +47,7 @@ export const ModeGameWrapper = () => {
                     </Link>
 
                     <Link
-                        href='mode-game/3d'
+                        href={`mode-game/3d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
