@@ -242,7 +242,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'pizza',
                 target: 'target.mind',
-                ar_scale: '0.005 0.005 0.005',
+                ar_scale: '5 5 5',
                 color: '#e7cc57'
             },
             {
