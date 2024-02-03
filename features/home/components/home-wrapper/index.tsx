@@ -77,7 +77,9 @@ export const HomeWrapper = () => {
             <p className='text-xl text-black font-medium text-center'>Bermain</p>
         </Link>
 
-        <Link href="/mode-card" className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center">
+        <Link 
+          href={`/mode-card?group=${group}`}
+          className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center">
             <Image
                 src='/assets/images/card.png'
                 width={70}

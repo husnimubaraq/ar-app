@@ -6,8 +6,9 @@ import Link from "next/link"
 import { twMerge } from "tailwind-merge"
 import { useRouter } from 'next/router'
 import { Button } from 'components/base'
-import { dataIntro2D, dataIntro3D } from 'features/intro'
+import { dataIntro2D, dataIntro3D, dataIntroTKA2D, dataIntroTKA3D } from 'features/intro'
 import { ButtonSound } from 'components/button-sound'
+import { useMemo } from 'react'
 
 export const ModeCardDetail= () => {
     const { query } = useRouter()
@@ -16,10 +17,21 @@ export const ModeCardDetail= () => {
     const category = query.category as string ?? '' 
     const name = query.name as string ?? ''
 
-    const dataCategory = geometry === '2d' ?
-        dataIntro2D.find((item) => item.category.name === category)
-        :
-        dataIntro3D.find((item) => item.category.name === category)
+    const group = query.group as string ?? ''
+
+    const dataCategory = useMemo(() => {
+        if(group === "TKA"){
+            return geometry === '2d' ? 
+                dataIntroTKA2D.find((item) => item.category.name === category)
+                    : 
+                dataIntroTKA3D.find((item) => item.category.name === category)
+        }else{
+            return geometry === '2d' ? 
+                dataIntro2D.find((item) => item.category.name === category)
+                    : 
+                dataIntro3D.find((item) => item.category.name === category)
+        }
+    }, [geometry, group])
 
     const detail = dataCategory?.data.find((item) => item.name === name)
 

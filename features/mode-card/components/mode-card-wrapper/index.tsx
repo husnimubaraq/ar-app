@@ -7,10 +7,14 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useMenuSound } from 'hooks'
+import { useRouter } from "next/router"
 import { ButtonSound } from "components/button-sound"
 import modeCardSound from 'public/assets/sounds/unduhkartu.wav';
 
 export const ModeCardWrapper = () => {
+    const { query } = useRouter()
+
+    const group = query.group as string ?? ''
 
     useMenuSound(modeCardSound)
 
@@ -32,7 +36,7 @@ export const ModeCardWrapper = () => {
             <div className="flex flex-col justify-center h-[80vh] mt-5">
                 <div className="flex items-center justify-around">
                     <Link
-                        href='mode-card/2d'
+                        href={`mode-card/2d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
@@ -45,7 +49,7 @@ export const ModeCardWrapper = () => {
                     </Link>
 
                     <Link
-                        href='mode-card/3d'
+                        href={`mode-card/3d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
