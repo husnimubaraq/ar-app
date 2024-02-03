@@ -1,0 +1,11 @@
+Model Information:
+* title:	pear
+* source:	https://sketchfab.com/3d-models/pear-f30bb81bc8d34db78d8da225b3cb847f
+* author:	koyama (https://sketchfab.com/koyata0603)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "pear" (https://sketchfab.com/3d-models/pear-f30bb81bc8d34db78d8da225b3cb847f) by koyama (https://sketchfab.com/koyata0603) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

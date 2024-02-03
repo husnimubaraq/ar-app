@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sandwich
+* source:	https://sketchfab.com/3d-models/sandwich-8e8b342613f0477182ec8586876291cf
+* author:	thuberchs (https://sketchfab.com/thuberchs)
+
+Model License:
+* license type:	CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)
+* requirements:	Author must be credited. No commercial use. Modified versions must have the same license.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sandwich" (https://sketchfab.com/3d-models/sandwich-8e8b342613f0477182ec8586876291cf) by thuberchs (https://sketchfab.com/thuberchs) licensed under CC-BY-NC-SA-4.0 (http://creativecommons.org/licenses/by-nc-sa/4.0/)

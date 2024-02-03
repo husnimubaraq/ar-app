@@ -8,9 +8,9 @@ import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
 import { useRouter } from "next/router"
-import { dataIntro2D, dataIntro3D } from "features/intro"
+import { dataIntro2D, dataIntro3D, dataIntroTKA2D, dataIntroTKA3D } from "features/intro"
 import useSound from "use-sound"
-import { useEffect } from "react"
+import { useEffect, useMemo } from "react"
 
 export const ModeArList = () => {
 
@@ -19,10 +19,21 @@ export const ModeArList = () => {
     const geometry = query.geometry as string ?? '' 
     const category = query.category as string ?? '' 
 
-    const data = geometry === '2d' ? 
-        dataIntro2D.find((item) => item.category.name === category)
-            : 
-        dataIntro3D.find((item) => item.category.name === category)
+    const group = query.group as string ?? ''
+
+    const data = useMemo(() => {
+        if(group === "TKA"){
+            return geometry === '2d' ? 
+                dataIntroTKA2D.find((item) => item.category.name === category)
+                    : 
+                dataIntroTKA3D.find((item) => item.category.name === category)
+        }else{
+            return geometry === '2d' ? 
+                dataIntro2D.find((item) => item.category.name === category)
+                    : 
+                dataIntro3D.find((item) => item.category.name === category)
+        }
+    }, [geometry, group])
 
     const [playSquare] = useSound(`/assets/sounds/segiempat.wav`)
     const [playCircle] = useSound(`/assets/sounds/lingkaran.mp3`)
@@ -76,7 +87,7 @@ export const ModeArList = () => {
                 {data && data.data.map((item, index) => (
                     <Link
                         key={index}
-                        href={`/mode-ar/${geometry}/category/${category}/${item.name}`}
+                        href={`/mode-ar/${geometry}/category/${category}/${item.name}?group=${group}`}
                         className="bg-neutral-200 rounded-md py-2 w-[80%] hover:bg-orange-500 hover:text-white text-sm text-center"
                     >
                         {item.text}

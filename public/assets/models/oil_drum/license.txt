@@ -1,0 +1,11 @@
+Model Information:
+* title:	Oil Drum (Game Model)
+* source:	https://sketchfab.com/3d-models/oil-drum-game-model-6a6a7ece4bc04105b8a229594d30b5ef
+* author:	Michael Makivic (https://sketchfab.com/makivic)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Oil Drum (Game Model)" (https://sketchfab.com/3d-models/oil-drum-game-model-6a6a7ece4bc04105b8a229594d30b5ef) by Michael Makivic (https://sketchfab.com/makivic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

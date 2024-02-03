@@ -6,6 +6,7 @@ import chessboardGlb from 'public/assets/models/chessboard/scene.glb'
 import windowGlb from 'public/assets/models/window/scene.glb'
 import paperGlb from 'public/assets/models/paper/scene.glb'
 import frameGlb from 'public/assets/models/frame/scene.glb'
+import teleGlb from 'public/assets/models/tele/scene.glb'
 
 //circle
 import clockGlb from 'public/assets/models/clock/scene.glb'
@@ -13,11 +14,16 @@ import coinGlb from 'public/assets/models/coin/scene.glb'
 import platesGlb from 'public/assets/models/plates/scene.glb'
 import wheelGlb from 'public/assets/models/wheel/scene.glb'
 import cddvdGlb from 'public/assets/models/cddvd/scene.glb'
+import oneRingGlb from 'public/assets/models/one_ring/scene.glb'
+import simpleButtonGlb from 'public/assets/models/simple_button/scene.glb'
+import bottleCapGlb from 'public/assets/models/bottle_cap/scene.glb'
 
 //triangle
 import hangerGlb from 'public/assets/models/hanger/scene.glb'
 import flagGlb from 'public/assets/models/flag/scene.glb'
 import cautionGlb from 'public/assets/models/caution/scene.glb'
+import pizzaGlb from 'public/assets/models/pizza/scene.glb'
+import tentGlb from 'public/assets/models/tent/scene.glb'
 
 //cube
 import diceGlb from 'public/assets/models/dice/scene.glb'
@@ -38,6 +44,10 @@ import gasGlb from 'public/assets/models/gas/scene.glb'
 import bucketGlb from 'public/assets/models/bucket/scene.glb'
 import bottleGlb from 'public/assets/models/bottle/scene.glb'
 import cupGlb from 'public/assets/models/cup/scene.glb'
+import drumGlb from 'public/assets/models/drum/scene.glb'
+import batteryGlb from 'public/assets/models/battery/scene.glb'
+import pipeGlb from 'public/assets/models/pipe/scene.glb'
+import gallonGlb from 'public/assets/models/gallon/scene.glb'
 
 export const dataIntro2D: TIntro[] = [
     {
@@ -86,7 +96,17 @@ export const dataIntro2D: TIntro[] = [
                 target: 'target.mind',
                 ar_scale: '0.08 0.08 0.08',
                 color: '#7db6e1'
-            }
+            },
+            {
+                image_url: "/assets/models/tele/ori.png",
+                model: teleGlb,
+                text: 'TV',
+                scale: 0.5,
+                name: 'tele',
+                target: 'target.mind',
+                ar_scale: '0.08 0.08 0.08',
+                color: '#7db6e1'
+            },
         ]
     },
     {
@@ -145,6 +165,36 @@ export const dataIntro2D: TIntro[] = [
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
                 color: '#da7bb3'
+            },
+            {
+                image_url: "/assets/models/one_ring/ori.png",
+                model: oneRingGlb,
+                text: 'Cincin',
+                scale: 1,
+                name: 'one_ring',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#da7bb3'
+            },
+            {
+                image_url: "/assets/models/simple_button/ori.png",
+                model: simpleButtonGlb,
+                text: 'Kancing',
+                scale: 1,
+                name: 'simple_button',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#da7bb3'
+            },
+            {
+                image_url: "/assets/models/bottle_cap/ori.png",
+                model: bottleCapGlb,
+                text: 'Kancing',
+                scale: 1,
+                name: 'bottle_cap',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#da7bb3'
             }
         ]
     },
@@ -181,6 +231,26 @@ export const dataIntro2D: TIntro[] = [
                 text: 'Rambu Lalu Lintas',
                 scale: 0.5,
                 name: 'caution',
+                target: 'target.mind',
+                ar_scale: '0.01 0.01 0.01',
+                color: '#e7cc57'
+            },
+            {
+                image_url: "/assets/models/pizza/ori.png",
+                model: pizzaGlb,
+                text: 'Potongan Pizza',
+                scale: 0.5,
+                name: 'pizza',
+                target: 'target.mind',
+                ar_scale: '0.01 0.01 0.01',
+                color: '#e7cc57'
+            },
+            {
+                image_url: "/assets/models/tent/ori.png",
+                model: tentGlb,
+                text: 'Tenda',
+                scale: 0.5,
+                name: 'tent',
                 target: 'target.mind',
                 ar_scale: '0.01 0.01 0.01',
                 color: '#e7cc57'
@@ -351,6 +421,46 @@ export const dataIntro3D: TIntro[] = [
                 text: 'Cangkir',
                 scale: 0.5,
                 name: 'cup',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
+            },
+            {
+                image_url: "/assets/models/drum/ori.png",
+                model: drumGlb,
+                text: 'Bedug',
+                scale: 0.5,
+                name: 'drum',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
+            },
+            {
+                image_url: "/assets/models/battery/ori.png",
+                model: batteryGlb,
+                text: 'Baterai',
+                scale: 0.5,
+                name: 'battery',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
+            },
+            {
+                image_url: "/assets/models/pipe/ori.png",
+                model: pipeGlb,
+                text: 'Pipa Air',
+                scale: 0.5,
+                name: 'pipe',
+                target: 'target.mind',
+                ar_scale: '0.5 0.5 0.5',
+                color: '#8ebb68'
+            },
+            {
+                image_url: "/assets/models/gallon/ori.png",
+                model: gallonGlb,
+                text: 'Galon',
+                scale: 0.5,
+                name: 'gallon',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
                 color: '#8ebb68'

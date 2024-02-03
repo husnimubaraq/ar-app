@@ -8,9 +8,9 @@ import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useMenuSound } from 'hooks'
 import { Tab } from "@headlessui/react"
-import { useState } from "react"
+import { useState, useMemo } from "react"
 import { useRouter } from "next/router"
-import { dataIntro2D, dataIntro3D } from "features/intro"
+import { dataIntro2D, dataIntro3D, dataIntroTKA2D, dataIntroTKA3D } from "features/intro"
 import { ButtonSound } from "components/button-sound"
 import shapeSound from 'public/assets/sounds/contohbenda.wav';
 import useSound from "use-sound"
@@ -20,8 +20,15 @@ export const IntroList = () => {
     const { query } = useRouter()
 
     const param = query.geometry as string ?? '' 
+    const group = query.group as string ?? '' 
 
-    const data = param === '2d' ? dataIntro2D : dataIntro3D
+    const data = useMemo(() => {
+        if(group === "TKA"){
+            return param === '2d' ? dataIntroTKA2D : dataIntroTKA3D
+        }else{
+            return param === '2d' ? dataIntro2D : dataIntro3D
+        }
+    }, [param, group])
 
     const [tabIndex, setTabIndex] = useState(0)
 
@@ -60,7 +67,7 @@ export const IntroList = () => {
         <div className="">
             <div className="flex justify-between items-center text-neutral-500">
                 <Link
-                    href="/"
+                    href={`/home?group=${group}`}
                     className="text-neutral-500  hover:text-orange-500"
                 >
                     <HomeIcon />
@@ -98,7 +105,7 @@ export const IntroList = () => {
                         className="grid grid-cols-3 gap-3 py-4" 
                     >
                         {data[tabIndex].data.map((item, index) => (
-                            <div key={index} className="flex flex-col items-center justify-center  h-[120px] bg-white rounded-xl">
+                            <div key={index} className="flex flex-col items-center justify-center h-[150px] bg-white rounded-xl">
                                 <Image
                                     src={item.image_url}
                                     width={50}

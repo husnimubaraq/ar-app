@@ -1,0 +1,11 @@
+Model Information:
+* title:	Red Basket
+* source:	https://sketchfab.com/3d-models/red-basket-64119370afe343dca60dd37f488eb03a
+* author:	bretzel44 (https://sketchfab.com/bretzel44)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Red Basket" (https://sketchfab.com/3d-models/red-basket-64119370afe343dca60dd37f488eb03a) by bretzel44 (https://sketchfab.com/bretzel44) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -7,10 +7,14 @@ import { HomeIcon, SoundIcon } from "components/icon"
 import { dataCard } from "features/mode-card"
 import { twMerge } from "tailwind-merge"
 import { useMenuSound } from 'hooks'
+import { useRouter } from "next/router"
 import { ButtonSound } from "components/button-sound"
 import modeArSound from 'public/assets/sounds/modear.wav';
 
 export const ModeArWrapper = () => {
+    const { query } = useRouter()
+
+    const group = query.group as string ?? ''
 
     useMenuSound(modeArSound)
 
@@ -32,7 +36,7 @@ export const ModeArWrapper = () => {
             <div className="flex flex-col justify-center h-[80vh] mt-5">
                 <div className="flex items-center justify-around">
                     <Link
-                        href='mode-ar/2d'
+                        href={`mode-ar/2d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
@@ -45,7 +49,7 @@ export const ModeArWrapper = () => {
                     </Link>
 
                     <Link
-                        href='mode-ar/3d'
+                        href={`mode-ar/3d?group=${group}`}
                         className="flex flex-col items-center justify-center gap-y-3 hover:text-orange-500 px-5"
                     >
                         <Image
