@@ -104,7 +104,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'tele',
                 target: 'target.mind',
-                ar_scale: '0.005 0.005 0.005',
+                ar_scale: '0.5 0.5 0.5',
                 color: '#7db6e1'
             },
         ]
@@ -242,7 +242,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'pizza',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01',
+                ar_scale: '5 5 5',
                 color: '#e7cc57'
             },
             {
@@ -252,7 +252,7 @@ export const dataIntro2D: TIntro[] = [
                 scale: 0.5,
                 name: 'tent',
                 target: 'target.mind',
-                ar_scale: '0.005 0.005 0.005',
+                ar_scale: '0.5 0.5 0.5',
                 color: '#e7cc57'
             }
         ]
@@ -442,7 +442,7 @@ export const dataIntro3D: TIntro[] = [
                 scale: 0.5,
                 name: 'battery',
                 target: 'target.mind',
-                ar_scale: '5 5 5',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#8ebb68'
             },
             {
