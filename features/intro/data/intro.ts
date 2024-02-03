@@ -105,7 +105,7 @@ export const dataIntro2D: TIntro[] = [
                 name: 'tele',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
-                color: '#7db6e1'
+                color: '#938bb0'
             },
         ]
     },
@@ -243,7 +243,7 @@ export const dataIntro2D: TIntro[] = [
                 name: 'pizza',
                 target: 'target.mind',
                 ar_scale: '5 5 5',
-                color: '#e7cc57'
+                color: '#e79353'
             },
             {
                 image_url: "/assets/models/tent/ori.png",
@@ -253,7 +253,7 @@ export const dataIntro2D: TIntro[] = [
                 name: 'tent',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
-                color: '#e7cc57'
+                color: '#938bb0'
             }
         ]
     }
@@ -433,7 +433,7 @@ export const dataIntro3D: TIntro[] = [
                 name: 'drum',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
-                color: '#8ebb68'
+                color: '#7db6e1'
             },
             {
                 image_url: "/assets/models/battery/ori.png",
@@ -453,7 +453,7 @@ export const dataIntro3D: TIntro[] = [
                 name: 'pipe',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
-                color: '#8ebb68'
+                color: '#e7cc57'
             },
             {
                 image_url: "/assets/models/gallon/ori.png",
@@ -463,7 +463,7 @@ export const dataIntro3D: TIntro[] = [
                 name: 'gallon',
                 target: 'target.mind',
                 ar_scale: '0.5 0.5 0.5',
-                color: '#8ebb68'
+                color: '#938bb0'
             },
         ]
     }

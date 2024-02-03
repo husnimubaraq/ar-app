@@ -36,13 +36,13 @@ export const MainWrapper = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-y-5 mt-10">
+      <div className="flex flex-col items-center gap-y-5 mt-20">
         <Link
             href='/home?group=TKA'
             className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
         >
             <Image
-                src='/assets/images/intro.png'
+                src='/assets/images/TKA.png'
                 width={70}
                 height={70}
                 alt={""}
@@ -54,7 +54,7 @@ export const MainWrapper = () => {
             className="flex flex-col items-center rounded-md py-2 w-[80%] hover:text-orange-500 text-sm text-center"
         >
             <Image
-                src='/assets/images/ar.png'
+                src='/assets/images/TKB.png'
                 width={70}
                 height={70}
                 alt={""}

@@ -6,9 +6,9 @@ import Link from "next/link"
 import { twMerge } from "tailwind-merge"
 import { useCustomSound } from 'hooks'
 import { useRouter } from 'next/router'
-import { dataIntro2D, dataIntro3D } from 'features/intro'
+import { dataIntro2D, dataIntro3D, dataIntroTKA2D, dataIntroTKA3D } from 'features/intro'
 import useSound from 'use-sound'
-import { useEffect } from 'react'
+import { useEffect, useMemo } from 'react'
 
 export const ModeCardList = () => {
 
@@ -17,10 +17,21 @@ export const ModeCardList = () => {
     const geometry = query.geometry as string ?? '' 
     const category = query.category as string ?? '' 
 
-    const data = geometry === '2d' ? 
-        dataIntro2D.find((item) => item.category.name === category)
-            : 
-        dataIntro3D.find((item) => item.category.name === category)
+    const group = query.group as string ?? ''
+
+    const data = useMemo(() => {
+        if(group === "TKA"){
+            return geometry === '2d' ? 
+                dataIntroTKA2D.find((item) => item.category.name === category)
+                    : 
+                dataIntroTKA3D.find((item) => item.category.name === category)
+        }else{
+            return geometry === '2d' ? 
+                dataIntro2D.find((item) => item.category.name === category)
+                    : 
+                dataIntro3D.find((item) => item.category.name === category)
+        }
+    }, [geometry, group])
 
     const [playSquare] = useSound(`/assets/sounds/segiempat.wav`)
     const [playCircle] = useSound(`/assets/sounds/lingkaran.mp3`)
@@ -75,7 +86,7 @@ export const ModeCardList = () => {
                     {data?.data.map((item, index) => (
                         <Link
                             key={index.toString()}
-                            href={`/mode-card/${geometry}/${category}/${item.name}`}
+                            href={`/mode-card/${geometry}/${category}/${item.name}?group=${group}`}
                             className={twMerge(
                                 'p-2 rounded-md cursor-pointer border border-white hover:border-orange-500'
                             )}
@@ -84,7 +95,7 @@ export const ModeCardList = () => {
                             }}
                         >
                             <div
-                                className='bg-white rounded-t-md px-2 w-full h-[150px] flex flex-col items-center justify-center'
+                                className='bg-white rounded-t-md px-2 w-full h-[200px] flex flex-col items-center justify-center'
                             >
                                 <Image
                                     src={item.image_url}
