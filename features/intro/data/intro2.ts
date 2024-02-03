@@ -160,7 +160,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.5,
                 name: 'strawberry',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01',
+                ar_scale: '5 5 5',
                 color: '#e7cc57'
             },
             {
@@ -170,7 +170,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.5,
                 name: 'sandwich',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01',
+                ar_scale: '5 5 5',
                 color: '#e7cc57'
             },
         ]
@@ -208,11 +208,11 @@ export const dataIntroTKA3D: TIntro[] = [
             {
                 image_url: "/assets/models/red_basket/ori.png",
                 model: redBasketGlb,
-                text: 'Kerangjang',
+                text: 'Keranjang',
                 scale: 0.5,
                 name: 'red_basket',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01',
+                ar_scale: '1 1 1',
                 color: '#e7cc57'
             },
         ]
@@ -231,7 +231,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'orange',
                 target: 'target.mind',
-                ar_scale: '1 1 1',
+                ar_scale: '10 10 10',
                 color: '#938bb0'
             },
             {
