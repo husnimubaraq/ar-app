@@ -195,13 +195,6 @@ export const dataGameTKA3D: TModeGame[] = [
         title: 'Tabung',
         game: [
             {
-                image_url: "/assets/models/glass/ori.png",
-                model: glassGlb,
-                text: 'Gelas',
-                scale: 8,
-                name: 'glass',
-            },
-            {
                 image_url: "/assets/models/jar/ori.png",
                 model: jarGlb,
                 text: 'Toples',
