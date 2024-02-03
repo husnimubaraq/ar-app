@@ -56,13 +56,6 @@ export const dataGameTKA2D: TModeGame[] = [
                 scale: 0.02,
                 name: 'door',
             },
-            {
-                image_url: "/assets/models/soap/ori.png",
-                model: soapGlb,
-                text: 'Sabun Batang',
-                scale: 0.1,
-                name: 'soap',
-            },
         ]
     },
     {
