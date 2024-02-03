@@ -130,7 +130,7 @@ export const dataIntroTKA2D: TIntro[] = [
                 scale: 0.05,
                 name: 'watermelon',
                 target: 'target.mind',
-                ar_scale: '0.1 0.1 0.1',
+                ar_scale: '1 1 1',
                 color: '#e79353'
             },
             {
@@ -221,7 +221,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 1,
                 name: 'orange',
                 target: 'target.mind',
-                ar_scale: '0.3 0.3 0.3',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#938bb0'
             },
             {
@@ -231,7 +231,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 15,
                 name: 'egg',
                 target: 'target.mind',
-                ar_scale: '3 3 3',
+                ar_scale: '0.05 0.05 0.05',
                 color: '#da7bb3'
             },
             {
@@ -251,7 +251,7 @@ export const dataIntroTKA3D: TIntro[] = [
                 scale: 0.4,
                 name: 'apple',
                 target: 'target.mind',
-                ar_scale: '0.01 0.01 0.01',
+                ar_scale: '5 5 5',
                 color: '#8ebb68'
             }
         ]
@@ -263,16 +263,6 @@ export const dataIntroTKA3D: TIntro[] = [
             image_url: '/assets/images/tube.png'
         },
         data: [
-            {
-                image_url: "/assets/models/glass/ori.png",
-                model: glassGlb,
-                text: 'Gelas',
-                scale: 0.1,
-                name: 'glass',
-                target: 'target.mind',
-                ar_scale: '0.03 0.03 0.03',
-                color: '#938bb0'
-            },
             {
                 image_url: "/assets/models/jar/ori.png",
                 model: jarGlb,
