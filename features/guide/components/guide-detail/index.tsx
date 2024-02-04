@@ -7,8 +7,12 @@ import { useCustomSound } from 'hooks'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-export const GuideWrapper = () => {
-    const { push } = useRouter()
+export const GuideDetail = () => {
+    const { query } = useRouter()
+
+    const type = query.type as string ?? ''
+
+    const imageUrl = type === 'ar' ? '/assets/images/panduan3.jpg' : '/assets/images/panduan4.png'
     
     useCustomSound()
 
@@ -23,18 +27,12 @@ export const GuideWrapper = () => {
 
                 <div className="relative " style={{zIndex: 0}}>
                     <div
-                        className='rounded-t-md w-full h-[65vh] flex flex-col items-center justify-center overflow-auto'
+                        className='rounded-t-md w-full h-[65vh] flex flex-col items-center justify-center overflow-auto pt-5'
                     >
-                        <Link 
-                            href="/guide/detail?type=card"
-                            className="rounded-lg text-black bg-neutral-300 w-fit flex flex-col items-center mb-5 p-3">
-                            Panduan Unduh Kartu
-                        </Link>
-                        <Link 
-                            href="/guide/detail?type=ar"
-                            className="rounded-lg text-black bg-neutral-300 w-fit flex flex-col items-center mb-5 p-3">
-                            Panduan Penggunaan AR
-                        </Link>
+                        <img
+                            src={imageUrl}
+                            className='w-full h-full object-contain'
+                        />
                     </div>
                 </div>
 
