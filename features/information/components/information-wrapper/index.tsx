@@ -23,7 +23,7 @@ export const InformationWrapper = () => {
 
                 <div className="flex flex-col mt-[20%] items-center justify-center px-5">
                     <h5 className="text-lg font-bold text-center">PERINGATAN</h5>
-                    <p className="text-center mt-8">Saat menggunakan aplikasi ini harap waspada terhadap lingkungan sekitar dan bahaya fisik Anda. Disarankan agar anak kecil mendapat pengawasan orang dewasa saat menggunakan Augmented Reality.</p>
+                    <p className="text-center mt-8">Pada saat menggunakan aplikasi ini, harap waspada terhadap lingkungan sekitar dan bahaya fisik Anda. Disarankan agar anak kecil mendapat pengawasan orang dewasa saat menggunakan Augmented Reality</p>
                 </div>
 
                 <div className="absolute -bottom-4 left-0 right-0 flex justify-center">
