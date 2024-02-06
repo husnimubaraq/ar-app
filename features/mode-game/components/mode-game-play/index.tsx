@@ -153,8 +153,7 @@ export const ModeGamePlay = () => {
                         </Canvas>
                         {status === 'idle' ? (
                             <div
-                                // onClick={onMic}
-                                onClick={onNext}
+                                onClick={onMic}
                                 className="bg-neutral-200 rounded-md py-2 w-[50%] hover:bg-orange-500 hover:text-white text-sm text-center cursor-pointer absolute bottom-[5%] left-0 right-0 mx-auto"
                             >
                                 <div className="flex items-center justify-center gap-x-2 hover:text-white">
